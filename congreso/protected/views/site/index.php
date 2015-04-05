@@ -134,9 +134,8 @@
         <h4 class="modal-title" id="myModalLabel">Mapa del Evento</h4>
       </div>
       <div class="modal-body">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3736.138410769463!2d-100.81252!3d20.541517!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842cbabd3c2cd0ab%3A0x655a93bfa763b7ce!2sTecnologico+de+celaya+Campus+2!5e0!3m2!1ses!2s!4v1428138598997" width="100%" height="600" frameborder="0" style="border:0"></iframe>
-      </iframe>
-    </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.138410769463!2d-100.81251999999999!3d20.541517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842cbabd3c2cd0ab%3A0x655a93bfa763b7ce!2sTecnologico+de+celaya+Campus+2!5e0!3m2!1ses!2s!4v1428204840987" width="100%" height="450" frameborder="0" style="border:0"></iframe>
+      </div>
     <div class="modal-footer">
       <button type="button" class="btn btn-primary btn-lg" data-dismiss="modal">Cerrar</button>
     </div>
@@ -213,7 +212,7 @@
 
     <!-- Some Text -->
     <p class="text-center">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-    
+
       <!-- Divider -->
       <div class="hr1" style="margin-bottom:15px;"></div>
       <center>
@@ -281,7 +280,22 @@
     <div class="hr1" style="margin-bottom:30px;"></div>
 
     <!-- Button in Center -->
-    <p class="text-center"><a href="#" class="btn-system btn-medium border-btn"><i class="icon-brush"></i> M&aacute;s Informaci&oacute;n</a></p>
+   <!-- <p class="text-center"><a href="#" class="btn-system btn-medium border-btn"><i class="icon-brush"></i> M&aacute;s Informaci&oacute;n</a></p>-->
+
+          <!-- Facebook Page Pluggin-->
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.3";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+      </script>
+      
+      <center>
+        <div class="fb-page" data-href="https://www.facebook.com/itcelayaOficial" data-width="500" data-hide-cover="false" data-show-facepile="false" data-show-posts="false"></div>
+      </center>
 
   </div>
 </div>
@@ -548,24 +562,6 @@
         </div>
       </div>
 
-      <div class="plan-signup">
-        <a href="#" class="btn-system btn-small" data-toggle="modal" data-target="#modal_Hotel_Mas">M&aacute;s Informaci&oacute;n</a>
-      </div>
-
-      <!-- Modal Hotel Mas -->
-      <div class="modal fade" id="modal_Hotel_Mas" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel">M&aacute;s Hoteles</h4>
-            </div>
-            <div class="modal-body">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14944.553643077852!2d-100.81252!3d20.541517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shoteles!5e0!3m2!1ses!2s!4v1428200017255" width="600" height="450" frameborder="0" style="border:0"></iframe>            </div>
-          </div>
-        </div>
-      </div>
-
       <!--<div class="col-md-3 col-sm-3 col-xs-12">
         <div class="pricing-table highlight-plan">
           <div class="plan-name">
@@ -592,7 +588,27 @@
 
   </div>
 </div>
+
+<center>
+<div class="plan-signup">
+        <a href="#" class="btn-system btn-small" data-toggle="modal" data-target="#modal_Hotel_Mas">M&aacute;s Informaci&oacute;n</a>
+      </div>
+
+      <!-- Modal Hotel Mas -->
+      <div class="modal fade" id="modal_Hotel_Mas" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">M&aacute;s Hoteles</h4>
+            </div>
+            <div class="modal-body">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14944.553643077852!2d-100.81252!3d20.541517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shoteles!5e0!3m2!1ses!2s!4v1428200017255" width="600" height="450" frameborder="0" style="border:0"></iframe>            </div>
+          </div>
+        </div>
+      </div>
 </div>
+</center>
 <!-- End Hoteles Table Section -->
 
 
@@ -724,9 +740,6 @@
     </div><!-- .container -->
   </div>
   <!-- End Team Member Section -->
-
-
-
 
 
   <!-- Start Footer Section -->
