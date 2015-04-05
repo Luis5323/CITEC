@@ -14,7 +14,7 @@
     <!-- Carousel inner -->
     <div class="carousel-inner">
       <div class="item active">
-        <img class="img-responsive" src="images/slider/s1.2.png" alt="slider">
+        <img class="img-responsive" src="images/slider/bg3.jpg" alt="slider">
         <div class="slider-content">
           <div class="col-md-12 text-center">
             <h2 class="animated2">
@@ -30,7 +30,7 @@
       </div>
       <!--/ Carousel item end -->
       <div class="item">
-        <img class="img-responsive" src="images/slider/s1.2.png" alt="slider">
+        <img class="img-responsive" src="images/slider/bg3.jpg" alt="slider">
         <div class="slider-content">
           <div class="col-md-12 text-center">
             <h2 class="animated4">
@@ -46,7 +46,7 @@
       </div>
       <!--/ Carousel item end -->
       <div class="item">
-        <img class="img-responsive" src="images/slider/s1.2.png" alt="slider">
+        <img class="img-responsive" src="images/slider/bg3.jpg" alt="slider">
         <div class="slider-content">
           <div class="col-md-12 text-center">
             <h2 class="animated7 white">
@@ -200,19 +200,25 @@
 <!-- End Purchase Section -->
 
 
-
 <!-- Start Eventos Section -->
-<div class="section full-width-portfolio" style="border-top:0; border-bottom:0; background:#fff;">
+<div class="section" style="padding-top:60px; padding-bottom:60px; border-top:0; border-bottom:0; background:#fff;">
+  <div class="container">
 
-  <!-- Start Big Heading -->
-  <div class="big-title text-center" data-animation="fadeInDown" data-animation-delay="01">
-    <h1>Nuestros <strong>Eventos</strong></h1>
+    <!-- Start Big Heading -->
+    <div class="big-title text-center">
+      <p class="title-desc">Caracter&iacute;sticas De</p>
+      <h1>Nuestros <strong>Eventos</strong></h1>
+    </div>
+    <!-- End Big Heading -->
 
-  <p class="text-center">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-    <br/>veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
-
-    <!-- Start Recent Projects Carousel -->
-    <center>
+    <!-- Some Text -->
+    <p class="text-center">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+    
+      <!-- Divider -->
+      <div class="hr1" style="margin-bottom:15px;"></div>
+      <center>
+      <!-- Start Recent Projects Carousel -->
+      <!-- Start Recent Projects Carousel -->
       <ul id="portfolio-list" data-animated="fadeIn">
         <li>
           <img src="images/Portfolio/1.png" alt="" />
@@ -266,15 +272,20 @@
             <p class="body">web develpment, design</p>
           </div>
           <a href="#"><i class="more">+</i></a>
+
         </li>
       </ul>
+      <!-- End Recent Projects Carousel -->
     </center>
-  </div>
-  <!-- End Big Heading -->
+    <!-- Divider -->
+    <div class="hr1" style="margin-bottom:30px;"></div>
+
+    <!-- Button in Center -->
+    <p class="text-center"><a href="#" class="btn-system btn-medium border-btn"><i class="icon-brush"></i> M&aacute;s Informaci&oacute;n</a></p>
 
   </div>
-  <!-- End Portfolio Section -->
-
+</div>
+<!-- End Eventos Section -->
 
 
 
@@ -366,14 +377,14 @@
 <!-- End Noticias Section -->
 
 
-<!-- Start Pricing Table Section -->
+<!-- Start Hoteles Table Section -->
 <div class=" section pricing-section">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <!-- Start Big Heading -->
         <div class="big-title text-center">
-          <h1>Tenemos los mejores precios para <strong>Ti!</strong></h1>
+          <h1>Agradable <strong>Hospedaje</strong></h1>
         </div>
         <!-- End Big Heading -->
 
@@ -387,28 +398,175 @@
       <div class="col-md-3 col-sm-3 col-xs-12">
         <div class="pricing-table">
           <div class="plan-name">
-            <h3>Basic</h3>
+            <h3><strong>Hotel St. George Celaya</strong></h3>
           </div>
           <div class="plan-price">
-            <div class="price-value">$49<span>.00</span></div>
-            <div class="interval">per month</div>
+            <div class="price-value">$36<span>.00</span></div>
+            <div class="interval">por noche</div>
           </div>
           <div class="plan-list">
             <ul>
-              <li><strong>40 GB</strong> Storage</li>
-              <li><strong>40GB</strong> Transfer</li>
-              <li><strong>10</strong> Domains</li>
-              <li><strong>20</strong> Projects</li>
-              <li><strong>Free</strong> installation</li>
+              <li><strong>Telefono: <br></strong> +52 461 614 6530</li>
+              <li><a target="_blank" href="http://www.hotelstgeorge.com.mx/"><strong>hotelstgeorge.com</strong></a></li>
             </ul>
           </div>
           <div class="plan-signup">
-            <a href="#" class="btn-system btn-small">Sign Up Now</a>
+            <a href="#" class="btn-system btn-small" data-toggle="modal" data-target="#modal_Hotel_1">Detalles</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Hotel 1 -->
+      <div class="modal fade" id="modal_Hotel_1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">St. George</h4>
+            </div>
+            <div class="modal-body">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14946.781045944948!2d-100.83667699999998!3d20.518715000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842cbaf9a08e7b09%3A0xe520504adaeae9b3!2sHotel+St.+George!5e0!3m2!1ses!2s!4v1428199089643" width="600" height="450" frameborder="0" style="border:0"></iframe>            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary btn-lg" data-dismiss="modal">Cerrar</button>
+            </div>
           </div>
         </div>
       </div>
 
       <div class="col-md-3 col-sm-3 col-xs-12">
+        <div class="pricing-table">
+          <div class="plan-name">
+            <h3><strong>Hotel Mary Celaya</strong></h3>
+          </div>
+          <div class="plan-price">
+            <div class="price-value">$50<span>.00</span></div>
+            <div class="interval">por noche</div>
+          </div>
+          <div class="plan-list">
+            <ul>
+              <li><strong>Telefono: <br></strong> +52 461 612 0450</li>
+              <li><a href="#"><strong>-</strong></a></li>
+            </ul>
+          </div>
+          <div class="plan-signup">
+            <a href="#" class="btn-system btn-small" data-toggle="modal" data-target="#modal_Hotel_2">Detalles</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Hotel 2 -->
+      <div class="modal fade" id="modal_Hotel_2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Mary</h4>
+            </div>
+            <div class="modal-body">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14946.69874001782!2d-100.81473600000005!3d20.519558000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842cba88e2e052d9%3A0xe78d6a428a89890b!2sHotel+Mary!5e0!3m2!1ses!2s!4v1428199347364" width="600" height="450" frameborder="0" style="border:0"></iframe>            
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary btn-lg" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-3 col-xs-12">
+        <div class="pricing-table">
+          <div class="plan-name">
+            <h3><strong>Hotel Wyndham Garden Celaya</strong></h3>
+          </div>
+          <div class="plan-price">
+            <div class="price-value">$67<span>.00</span></div>
+            <div class="interval">por noche</div>
+          </div>
+          <div class="plan-list">
+            <ul>
+              <li><strong>Telefono: <br></strong> +52 461 192 0500</li>
+              <li><a target="_blank" href="http://www.wyndham.com/hotels/mexico/celaya/wyndham-garden-celaya/hotel-overview?cid=local"><strong>wyndham.com</strong></a></li>
+            </ul>
+          </div>
+          <div class="plan-signup">
+            <a href="#" class="btn-system btn-small" data-toggle="modal" data-target="#modal_Hotel_3">Detalles</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Hotel 3 -->
+      <div class="modal fade" id="modal_Hotel_3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Wyndham Garden Celaya</h4>
+            </div>
+            <div class="modal-body">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14943.41480237818!2d-100.82447400000001!3d20.553166000000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842cbadff2a0206d%3A0xdf41336fa214d3fe!2sHotel+Wyndham+Garden+Celaya!5e0!3m2!1ses!2s!4v1428198536801" width="600" height="450" frameborder="0" style="border:0"></iframe>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary btn-lg" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-3 col-sm-3 col-xs-12">
+        <div class="pricing-table">
+          <div class="plan-name">
+            <h3><strong>Hotel Casa Inn Celaya</strong></h3>
+          </div>
+          <div class="plan-price">
+            <div class="price-value">$82<span>.00</span></div>
+            <div class="interval">por noche</div>
+          </div>
+          <div class="plan-list">
+            <ul>
+              <li><strong>Telefono: <br></strong> +52 461 598 6700</li>
+              <li><a href="#"><strong>-</strong></a></li>
+            </ul>
+          </div>
+          <div class="plan-signup">
+            <a href="#" class="btn-system btn-small" data-toggle="modal" data-target="#modal_Hotel_4">Detalles</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Hotel 4 -->
+      <div class="modal fade" id="modal_Hotel_4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Mary</h4>
+            </div>
+            <div class="modal-body">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14945.383652204015!2d-100.77823200000002!3d20.533023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842cb069cd47ec6f%3A0x83d5a0f0d9847699!2sHotel+Casa+Inn!5e0!3m2!1ses!2s!4v1428199649856" width="600" height="450" frameborder="0" style="border:0"></iframe>              <button type="button" class="btn btn-primary btn-lg" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="plan-signup">
+        <a href="#" class="btn-system btn-small" data-toggle="modal" data-target="#modal_Hotel_Mas">M&aacute;s Informaci&oacute;n</a>
+      </div>
+
+      <!-- Modal Hotel Mas -->
+      <div class="modal fade" id="modal_Hotel_Mas" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">M&aacute;s Hoteles</h4>
+            </div>
+            <div class="modal-body">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14944.553643077852!2d-100.81252!3d20.541517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shoteles!5e0!3m2!1ses!2s!4v1428200017255" width="600" height="450" frameborder="0" style="border:0"></iframe>            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--<div class="col-md-3 col-sm-3 col-xs-12">
         <div class="pricing-table highlight-plan">
           <div class="plan-name">
             <h3>Advanced</h3>
@@ -430,62 +588,12 @@
             <a href="#" class="btn-system btn-small border-btn">Sign Up Now</a>
           </div>
         </div>
-      </div>
-
-
-      <div class="col-md-3 col-sm-3 col-xs-12">
-        <div class="pricing-table">
-          <div class="plan-name">
-            <h3>Professional</h3>
-          </div>
-          <div class="plan-price">
-            <div class="price-value">$199<span>.00</span></div>
-            <div class="interval">per month</div>
-          </div>
-          <div class="plan-list">
-            <ul>
-             <li><strong>40 GB</strong> Storage</li>
-             <li><strong>40GB</strong> Transfer</li>
-             <li><strong>10</strong> Domains</li>
-             <li><strong>20</strong> Projects</li>
-             <li><strong>Free</strong> installation</li>
-           </ul>
-         </div>
-         <div class="plan-signup">
-          <a href="#" class="btn-system btn-small">Sign Up Now</a>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="col-md-3 col-sm-3 col-xs-12">
-      <div class="pricing-table">
-        <div class="plan-name">
-          <h3>Extreme</h3>
-        </div>
-        <div class="plan-price">
-          <div class="price-value">$299<span>.00</span></div>
-          <div class="interval">per month</div>
-        </div>
-        <div class="plan-list">
-          <ul>
-            <li><strong>40 GB</strong> Storage</li>
-            <li><strong>40GB</strong> Transfer</li>
-            <li><strong>10</strong> Domains</li>
-            <li><strong>20</strong> Projects</li>
-            <li><strong>Free</strong> installation</li>
-          </ul>
-        </div>
-        <div class="plan-signup">
-          <a href="#" class="btn-system btn-small">Sign Up Now</a>
-        </div>
-      </div>
-    </div>
+      </div>-->
 
   </div>
 </div>
 </div>
-<!-- End Pricing Table Section -->
+<!-- End Hoteles Table Section -->
 
 
 <!-- Start Ponentes Section -->
