@@ -1,0 +1,785 @@
+<!-- Start Home Page Slider -->
+<section id="home">
+  <!-- Carousel -->
+  <div id="main-slide" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#main-slide" data-slide-to="0" class="active"></li>
+      <li data-target="#main-slide" data-slide-to="1"></li>
+      <li data-target="#main-slide" data-slide-to="2"></li>
+    </ol>
+    <!--/ Indicators end-->
+
+    <!-- Carousel inner -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img class="img-responsive" src="images/slider/s1.2.png" alt="slider">
+        <div class="slider-content">
+          <div class="col-md-12 text-center">
+            <h2 class="animated2">
+              <span>Bienvenidos al <strong>CITEC 2015</strong></span>
+            </h2>
+            <h3 class="animated3">
+              <span>Inspirando tecnolog&iacute;a</span>
+            </h3>
+            <p class="animated4"><a href="#informacion" class="slider btn btn-primary">Detalles</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Carousel item end -->
+      <div class="item">
+        <img class="img-responsive" src="images/slider/s1.2.png" alt="slider">
+        <div class="slider-content">
+          <div class="col-md-12 text-center">
+            <h2 class="animated4">
+              <span><strong>CITEC</strong> Ponentes</span>
+            </h2>
+            <h3 class="animated5">
+              <span>Ent&eacute;rate de nuestros ponentes para el evento</span>
+            </h3> 
+            <p class="animated6"><a href="#ponentes" class="slider btn btn-primary">Con&oacute;celos</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Carousel item end -->
+      <div class="item">
+        <img class="img-responsive" src="images/slider/s1.2.png" alt="slider">
+        <div class="slider-content">
+          <div class="col-md-12 text-center">
+            <h2 class="animated7 white">
+              <span>Citec <strong>Eventos</strong></span>
+            </h2>
+            <h3 class="animated8 white">
+              <span>Conoce nuestros enventos, no te quedes fuera!</span>
+            </h3> 
+            <div class="">
+              <a class="animated4 slider btn btn-primary btn-min-block" href="#" data-toggle="modal" data-target="#modal_registro">Registrar</a>
+              <a class="animated4 slider btn btn-default btn-min-block" href="#especificaciones">Detalles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/ Carousel item end -->
+    </div>
+    <!-- Carousel inner end-->
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#main-slide" data-slide="prev">
+      <span><i class="fa fa-angle-left"></i></span>
+    </a>
+    <a class="right carousel-control" href="#main-slide" data-slide="next">
+      <span><i class="fa fa-angle-right"></i></span>
+    </a>
+  </div>
+  <!-- /carousel -->
+</section>
+<!-- End Home Page Slider -->
+
+
+<!-- Start Information Section -->
+<div id="informacion" class="service section">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-12">
+        <!-- Classic Heading -->
+        <h4 class="classic-title"><span>Video Promocional</span></h4>
+        <!-- Vimeo Iframe -->
+        <iframe width="854" height="510" src="https://www.youtube.com/embed/XHdMxVbTniE" frameborder="0" allowfullscreen></iframe>
+        <br><br>
+      </div>
+
+      <!-- Fecha Icon 1 -->
+      <a data-toggle="modal" data-target="#modal_cuando">
+        <div class="col-md-6 col-sm-6 service-box service-center" data-animation="fadeIn" data-animation-delay="01">
+          <div class="service-icon">
+            <i class="fa fa-calendar-o icon-large"></i>
+          </div>
+          <div class="service-content">
+            <h4>¿Cu&aacute;do?</h4>
+            <p>¿A&uacute;n no conoces la fecha del evento? No te quedes fuera y descubrela aqu&iacute;.</p>
+          </div>
+        </div>
+      </a>
+      <!-- End Service Icon 1 -->
+
+      <!-- Lugar Icon 2 -->
+      <a data-toggle="modal" data-target="#modal_donde">
+        <div class="col-md-6 col-sm-6 service-box service-center" data-animation="fadeIn" data-animation-delay="02">
+          <div class="service-icon">
+            <i class="fa fa-map-marker icon-large"></i>
+          </div>
+          <div class="service-content">
+            <h4>¿D&oacute;nde?</h4>
+            <p>¿No conoces en donde se llevar&aacute; acabo el evento? No te preocupes, nosotros te decimos la ubicaci&oacute;n</p>
+          </div>
+        </div>
+      </a>
+      <!-- End Service Icon 2 -->
+
+    </div><!-- .row -->
+  </div><!-- .container -->
+</div>
+<!-- End Services Section -->
+
+<!-- Modal Mapa -->
+<div class="modal fade" id="modal_donde" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Mapa del Evento</h4>
+      </div>
+      <div class="modal-body">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3736.138410769463!2d-100.81252!3d20.541517!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842cbabd3c2cd0ab%3A0x655a93bfa763b7ce!2sTecnologico+de+celaya+Campus+2!5e0!3m2!1ses!2s!4v1428138598997" width="100%" height="600" frameborder="0" style="border:0"></iframe>
+      </iframe>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-primary btn-lg" data-dismiss="modal">Cerrar</button>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Modal Evento -->
+<div class="modal fade" id="modal_cuando" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"><?php echo $evento->nombre; ?></h4>
+      </div>
+      <div class="modal-body">
+        <center>
+          <?php echo $evento->mas_informacion; ?>
+          <br><br>
+          <b>
+            <p>Inicio: <?php echo $evento->fecha_inicio; ?></p>
+            <br>
+            <p>Fin: <?php echo $evento->fecha_fin; ?></p>
+          </b>
+          <br>
+          <img src="<?php echo $evento->logotipo; ?>">
+        </center>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary btn-lg" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Start Purchase Section -->
+<div id="especificaciones" class="section purchase">
+  <div class="container">
+
+    <!-- Start Video Section Content -->
+    <div class="section-video-content text-center">
+
+      <!-- Start Animations Text -->
+      <h1 class="fittext wite-text uppercase tlt">
+        <span class="texts">
+          <span>Proyectos creativos</span>
+          <span>Talleres vanguardistas</span>
+          <span>Temas innovadores</span>
+          <span>Distinguidas personalidades</span>
+        </span>
+         te esperan <br/>en este <strong>CITEC 2015</strong>
+      </h1>
+      <!-- End Animations Text -->
+
+    </div>
+    <!-- End Section Content -->
+
+  </div><!-- .container -->
+</div>
+<!-- End Purchase Section -->
+
+
+
+<!-- Start Eventos Section -->
+<div class="section full-width-portfolio" style="border-top:0; border-bottom:0; background:#fff;">
+
+  <!-- Start Big Heading -->
+  <div class="big-title text-center" data-animation="fadeInDown" data-animation-delay="01">
+    <h1>Nuestros <strong>Eventos</strong></h1>
+
+  <p class="text-center">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+    <br/>veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+
+    <!-- Start Recent Projects Carousel -->
+    <center>
+      <ul id="portfolio-list" data-animated="fadeIn">
+        <li>
+          <img src="images/Portfolio/1.png" alt="" />
+          <div class="portfolio-item-content">
+            <span class="header">Town winter 2013</span>
+            <p class="body">web develpment, design</p>
+          </div>
+          <a href="#"><i class="more">+</i></a>
+
+        </li>
+        <li>
+          <img src="images/Portfolio/2.png" alt="" />
+          <div class="portfolio-item-content">
+            <span class="header">Quarterly Musashino</span>
+            <p class="body">web develpment, design</p>
+          </div>
+          <a href="#"><i class="more">+</i></a>
+
+        </li>
+        <li>
+          <img src="images/Portfolio/3.png" alt="" />
+          <div class="portfolio-item-content">
+            <span class="header">Mainichi April 2014</span>
+            <p class="body">web develpment, design</p>
+          </div>
+          <a href="#"><i class="more">+</i></a>
+
+        </li>
+        <li>
+          <img src="images/Portfolio/4.png" alt="" />
+          <div class="portfolio-item-content">
+            <span class="header">Shitamachi Rocket</span>
+            <p class="body">web develpment, design</p>
+          </div>
+          <a href="#"><i class="more">+</i></a>
+
+        </li>
+        <li>
+          <img src="images/Portfolio/5.png" alt="" />
+          <div class="portfolio-item-content">
+            <span class="header">Majesty express vol. 01</span>
+            <p class="body">web develpment, design</p>
+          </div>
+          <a href="#"><i class="more">+</i></a>
+
+        </li>
+        <li>
+          <img src="images/Portfolio/6.png" alt="" />
+          <div class="portfolio-item-content">
+            <span class="header">Monocle issue 69</span>
+            <p class="body">web develpment, design</p>
+          </div>
+          <a href="#"><i class="more">+</i></a>
+        </li>
+      </ul>
+    </center>
+  </div>
+  <!-- End Big Heading -->
+
+  </div>
+  <!-- End Portfolio Section -->
+
+
+
+
+
+  <!-- Start Noticias Section -->
+  <div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+
+         <!-- Start Recent Posts Carousel -->
+         <div class="latest-posts">
+          <h4 class="classic-title"><span>Calendario de Actividades</span></h4>
+          <div class="latest-posts-classic custom-carousel touch-carousel" data-appeared-items="2">
+
+            <!-- Posts 1 -->
+            <div class="post-row item">
+              <div class="left-meta-post">
+                <div class="post-date"><span class="day">28</span><span class="month">Ago</span></div>
+                <div class="post-type"><i class="fa fa-picture-o"></i></div>
+              </div>
+              <h3 class="post-title"><a href="#">Taller de Android</a></h3>
+              <div class="post-content">
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit. 
+                  <a class="read-more" href="#">Leer M&aacute;s...</a>
+                </p>
+              </div>
+            </div>
+
+            <!-- Posts 2 -->
+            <div class="post-row item">
+              <div class="left-meta-post">
+                <div class="post-date"><span class="day">26</span><span class="month">Sep</span></div>
+                <div class="post-type"><i class="fa fa-picture-o"></i></div>
+              </div>
+              <h3 class="post-title"><a href="#">Taller Geolocalizaci&oacute;n</a></h3>
+              <div class="post-content">
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit. 
+                  <a class="read-more" href="#">Leer M&aacute;s...</a>
+                </p>
+              </div>
+            </div>
+
+            <!-- Posts 3 -->
+            <div class="post-row item">
+              <div class="left-meta-post">
+                <div class="post-date"><span class="day">26</span><span class="month">Dec</span></div>
+                <div class="post-type"><i class="fa fa-picture-o"></i></div>
+              </div>
+              <h3 class="post-title"><a href="#">Taller AutoCad</a></h3>
+              <div class="post-content">
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit. <a class="read-more" href="#">Read More...</a></p>
+              </div>
+            </div>
+
+            <!-- Posts 4 -->
+            <div class="post-row item">
+              <div class="left-meta-post">
+                <div class="post-date"><span class="day">28</span><span class="month">Sep</span></div>
+                <div class="post-type"><i class="fa fa-picture-o"></i></div>
+              </div>
+              <h3 class="post-title"><a href="#">Programaci&oacute;n Avanzada</a></h3>
+              <div class="post-content">
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit. <a class="read-more" href="#">Read More...</a></p>
+              </div>
+            </div>
+
+            <!-- Posts 5 -->
+            <div class="post-row item">
+              <div class="left-meta-post">
+                <div class="post-date"><span class="day">30</span><span class="month">Sep</span></div>
+                <div class="post-type"><i class="fa fa-picture-o"></i></div>
+              </div>
+              <h3 class="post-title"><a href="#">Taller Base de Datos</a></h3>
+              <div class="post-content">
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit. <a class="read-more" href="#">Read More...</a></p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- End Recent Posts Carousel -->
+
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- End Noticias Section -->
+
+
+<!-- Start Pricing Table Section -->
+<div class=" section pricing-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <!-- Start Big Heading -->
+        <div class="big-title text-center">
+          <h1>Tenemos los mejores precios para <strong>Ti!</strong></h1>
+        </div>
+        <!-- End Big Heading -->
+
+        <!-- Text -->
+        <p class="text-center">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+      </div>
+    </div>
+
+    <div class="row pricing-tables">
+
+      <div class="col-md-3 col-sm-3 col-xs-12">
+        <div class="pricing-table">
+          <div class="plan-name">
+            <h3>Basic</h3>
+          </div>
+          <div class="plan-price">
+            <div class="price-value">$49<span>.00</span></div>
+            <div class="interval">per month</div>
+          </div>
+          <div class="plan-list">
+            <ul>
+              <li><strong>40 GB</strong> Storage</li>
+              <li><strong>40GB</strong> Transfer</li>
+              <li><strong>10</strong> Domains</li>
+              <li><strong>20</strong> Projects</li>
+              <li><strong>Free</strong> installation</li>
+            </ul>
+          </div>
+          <div class="plan-signup">
+            <a href="#" class="btn-system btn-small">Sign Up Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-3 col-xs-12">
+        <div class="pricing-table highlight-plan">
+          <div class="plan-name">
+            <h3>Advanced</h3>
+          </div>
+          <div class="plan-price">
+            <div class="price-value">$99<span>.00</span></div>
+            <div class="interval">per month</div>
+          </div>
+          <div class="plan-list">
+            <ul>
+              <li><strong>40 GB</strong> Storage</li>
+              <li><strong>40GB</strong> Transfer</li>
+              <li><strong>10</strong> Domains</li>
+              <li><strong>20</strong> Projects</li>
+              <li><strong>Free</strong> installation</li>
+            </ul>
+          </div>
+          <div class="plan-signup">
+            <a href="#" class="btn-system btn-small border-btn">Sign Up Now</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-3 col-sm-3 col-xs-12">
+        <div class="pricing-table">
+          <div class="plan-name">
+            <h3>Professional</h3>
+          </div>
+          <div class="plan-price">
+            <div class="price-value">$199<span>.00</span></div>
+            <div class="interval">per month</div>
+          </div>
+          <div class="plan-list">
+            <ul>
+             <li><strong>40 GB</strong> Storage</li>
+             <li><strong>40GB</strong> Transfer</li>
+             <li><strong>10</strong> Domains</li>
+             <li><strong>20</strong> Projects</li>
+             <li><strong>Free</strong> installation</li>
+           </ul>
+         </div>
+         <div class="plan-signup">
+          <a href="#" class="btn-system btn-small">Sign Up Now</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-md-3 col-sm-3 col-xs-12">
+      <div class="pricing-table">
+        <div class="plan-name">
+          <h3>Extreme</h3>
+        </div>
+        <div class="plan-price">
+          <div class="price-value">$299<span>.00</span></div>
+          <div class="interval">per month</div>
+        </div>
+        <div class="plan-list">
+          <ul>
+            <li><strong>40 GB</strong> Storage</li>
+            <li><strong>40GB</strong> Transfer</li>
+            <li><strong>10</strong> Domains</li>
+            <li><strong>20</strong> Projects</li>
+            <li><strong>Free</strong> installation</li>
+          </ul>
+        </div>
+        <div class="plan-signup">
+          <a href="#" class="btn-system btn-small">Sign Up Now</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+<!-- End Pricing Table Section -->
+
+
+<!-- Start Ponentes Section -->
+<div id="ponentes" class="section" style="background:#fff;">
+  <div class="container">
+
+    <!-- Start Big Heading -->
+    <div class="big-title text-center" data-animation="fadeInDown" data-animation-delay="01">
+      <h1>Nuestros <strong>Ponentes</strong></h1>
+    </div>
+    <!-- End Big Heading -->
+
+    <!-- Some Text -->
+    <p class="text-center">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium <span class="accent-color sh-tooltip" data-placement="right" title="Simple Tooltip">doloremque laudantium</span>, totam rem aperiam, eaque ipsa quae ab illo inventore
+      <br/>veritatis et quasi <span class="accent-color sh-tooltip" data-placement="bottom" title="Simple Tooltip">architecto</span> beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+
+
+
+      <!-- Start Team Members -->
+      <div class="row">
+
+        <!-- Ponente Memebr 1 -->
+        <div class="col-md-3 col-sm-6 col-xs-12" data-animation="fadeIn" data-animation-delay="03">
+          <div class="team-member modern">
+            <!-- Ponente Photo, Name & Position -->
+            <div class="member-photo">
+              <img alt="" src="images/ponentes/face_placehold.jpg" />
+              <div class="member-name">Johnathan Doe <span>Developer</span>
+              </div>
+            </div>
+            <!-- Ponente Words -->
+            <div class="member-info">
+              <p>Duis Ponente irure dolor in reprehenderit in voluptate velit esse cillum dolore fugiat.</p>
+            </div>
+            <!-- Ponente Social Links -->
+            <div class="member-socail">
+              <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+              <a class="gplus" href="#"><i class="fa fa-google-plus"></i></a>
+              <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+              <a class="flickr" href="#"><i class="fa fa-flickr"></i></a>
+              <a class="mail" href="#"><i class="fa fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- End Ponente 1 -->
+
+        <!-- Start Ponente 2 -->
+        <div class="col-md-3 col-sm-6 col-xs-12" data-animation="fadeIn" data-animation-delay="04">
+          <div class="team-member modern">
+            <!-- Memebr Photo, Name & Position -->
+            <div class="member-photo">
+              <img alt="" src="images/ponentes/face_placehold.jpg" />
+              <div class="member-name">Silly Sally <span>Developer</span>
+              </div>
+            </div>
+            <!-- Ponente Words -->
+            <div class="member-info">
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore fugiat.</p>
+            </div>
+
+            <!-- Ponente Social Links -->
+            <div class="member-socail">
+              <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+              <a class="gplus" href="#"><i class="fa fa-google-plus"></i></a>
+              <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+              <a class="flickr" href="#"><i class="fa fa-flickr"></i></a>
+              <a class="mail" href="#"><i class="fa fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- End Ponente 2 -->
+
+        <!-- Start Ponente 3 -->
+        <div class="col-md-3 col-sm-6 col-xs-12" data-animation="fadeIn" data-animation-delay="05">
+          <div class="team-member modern">
+            <!-- Ponente Photo, Name & Position -->
+            <div class="member-photo">
+              <img alt="" src="images/ponentes/face_placehold.jpg" />
+              <div class="member-name">Chris John <span>Developer</span>
+              </div>
+            </div>
+            <!-- Ponente Words -->
+            <div class="member-info">
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore fugiat.</p>
+            </div>
+
+            <!-- Ponente Social Links -->
+            <div class="member-socail">
+              <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+              <a class="gplus" href="#"><i class="fa fa-google-plus"></i></a>
+              <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+              <a class="flickr" href="#"><i class="fa fa-flickr"></i></a>
+              <a class="mail" href="#"><i class="fa fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- End Ponente 3 -->
+
+        <!-- Start Ponente 4 -->
+        <div class="col-md-3 col-sm-6 col-xs-12" data-animation="fadeIn" data-animation-delay="06">
+          <div class="team-member modern">
+            <!-- Memebr Photo, Name & Position -->
+            <div class="member-photo">
+              <img alt="" src="images/ponentes/face_placehold.jpg" />
+              <div class="member-name">Sara John <span>Developer</span>
+              </div>
+            </div>
+            <!-- Ponente Words -->
+            <div class="member-info">
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore fugiat.</p>
+            </div>
+
+            <!-- Ponente Social Links -->
+            <div class="member-socail">
+              <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+              <a class="gplus" href="#"><i class="fa fa-google-plus"></i></a>
+              <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+              <a class="flickr" href="#"><i class="fa fa-flickr"></i></a>
+              <a class="mail" href="#"><i class="fa fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- End Ponente 4 -->
+
+      </div>
+      <!-- End Ponente Members -->
+
+    </div><!-- .container -->
+  </div>
+  <!-- End Team Member Section -->
+
+
+
+
+
+  <!-- Start Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="row footer-widgets">
+        <div class="footer-widget social-widget">
+          <h4>Siguenos en<span class="head-line"></span></h4>
+          <ul class="social-icons">
+            <li>
+              <a target="_blank" class="facebook" href="https://www.facebook.com/itcelayaOficial"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a target="_blank" class="twitter" href="https://twitter.com/itcelayaoficial"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+              <a target="_blank" class="google" href="https://plus.google.com/108807866126938532844/about?hl=es"><i class="fa fa-google-plus"></i></a>
+            </li>
+            <li>
+              <a target="_blank" class="instgram" href="https://instagram.com/itcelaya"><i class="fa fa-instagram"></i></a>
+            </li>
+            <li>
+              <a target="_blank" class="youtube" href="https://www.youtube.com/user/ItcelayaOficial"><i class="fa fa-youtube-play"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div><!-- row footer-widgets -->
+      <!-- End Subscribe & Social Links Widget -->
+
+
+        <!-- Start Contact Widget -->
+        <div class="col-md-12 col-xs-12">
+          <div class="footer-widget contact-widget">
+            <h4><img src="images/banner_itc.jpg" class="img-responsive" alt="Footer Logo" /></h4>
+            <center>
+              <h4>&quot;La t&eacute;cnica por un M&eacute;xico mejor&quot;<span class="head-line"></span></h4>
+            </center>
+            <ul>
+              <li><span>Direcci&oacute;n:</span> Av. Garc&iacute;a Cubas 1200, Esquina Ignacio Borunda Celaya, Gto. M&eacute;xico</li>
+              <li><span>Tel&eacute;fono:</span> +01 461 617 7770</li>
+              <li><span>Website:</span> www.itcelaya.edu.mx</li>
+            </ul>
+          </div>
+        </div><!-- .col-md-3 -->
+        <!-- End Contact Widget -->
+
+
+      <!-- Start Copyright -->
+      <div class="copyright-section">
+        <div class="row">
+          <div class="col-md-6">
+            <p>&copy; 2015 CITEC -  Derechos Reservados <a href="http://itcelaya.edu.mx"> ITCelaya</a> </p>
+          </div><!-- .col-md-6 -->
+          <div class="col-md-6">
+            <ul class="footer-nav">
+              <li><a href="#">Sitemap</a>
+              </li>
+              <li><a href="#">Privacy Policy</a>
+              </li>
+              <li><a href="#">Contact</a>
+              </li>
+            </ul>
+          </div><!-- .col-md-6 -->
+        </div><!-- .row -->
+      </div>
+      <!-- End Copyright -->
+
+    </div>
+  </footer>
+  <!-- End Footer Section -->
+
+
+</div>
+<!-- End Full Body Container -->
+
+<!-- Go To Top Link -->
+<a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+<div id="loader">
+  <div class="spinner">
+    <div class="dot1"></div>
+    <div class="dot2"></div>
+  </div>
+</div>                 
+
+<!-- Modal Registro -->
+<div class="modal fade" id="modal_registro" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Registro</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row"> 
+          <div class="col-md-12">
+
+            <?php $form=$this->beginWidget('CActiveForm', array(
+              'id'=>'participantes-form','enableAjaxValidation'=>false,
+              )
+              ); ?>
+
+              <!--campos de registro-->
+              <fieldset>
+                <!--nombre-->
+                <div class="form-group">
+                  <div class="controls">
+                    <?php echo $form->labelEx($model,'nombres'); ?>
+                    <?php echo $form->textField($model,'nombres',
+                    array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Nombre(s)')); ?>
+                    <?php echo $form->error($model,'nombres'); ?>
+                  </div>
+                </div>
+
+                <!--apellidos-->
+                <div class="form-group">
+                  <div class="controls">
+                    <?php echo $form->labelEx($model,'apellidos'); ?>
+                    <?php echo $form->textField($model,'apellidos',
+                    array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Apellido(s)')); ?>
+                    <?php echo $form->error($model,'apellidos'); ?>
+                  </div>
+                </div>
+
+                <!--email-->
+                <div class="form-group">
+                  <div class="controls">
+                    <?php echo $form->labelEx($model,'email'); ?>
+                    <?php echo $form->textField($model,'email',
+                    array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'usuario@correo.com')); ?>
+                    <?php echo $form->error($model,'email'); ?>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                 <div class="controls">
+                  <?php echo $form->labelEx($model,'contraseña'); ?>
+                  <?php echo $form->passwordField($model,'contraseña',
+                  array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Contraseña')); ?>
+                  <?php echo $form->error($model,'contraseña'); ?>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="controls">
+                  <?php echo $form->labelEx($model,'veri_contraseña'); ?>
+                  <?php echo $form->passwordField($model,'veri_contraseña',
+                  array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Contraseña')); ?>
+                  <?php echo $form->error($model,'veri_contraseña'); ?>           
+                </div>
+              </div>
+              <button type="submit" class="btn btn-large btn-success">Registrar</button>
+            </fieldset>
+
+            <?php $this->endWidget(); ?>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary btn-lg" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
