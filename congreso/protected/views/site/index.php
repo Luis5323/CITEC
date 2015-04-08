@@ -316,69 +316,70 @@
           <div class="latest-posts-classic custom-carousel touch-carousel" data-appeared-items="2">
 
             <!-- Posts 1 -->
+            <?php 
+                   foreach ($talleres as $key => $value) {
+                ?>
             <div class="post-row item">
               <div class="left-meta-post">
-                <div class="post-date"><span class="day">28</span><span class="month">Ago</span></div>
-                <div class="post-type"><i class="fa fa-picture-o"></i></div>
+                <!--<div class="post-date"><span class="day"><?php echo $value->fecha_inicio; ?></span><span class="month"><?php echo $value->fecha_fin; ?></span></div>
+                <div class="post-type"><i class="fa fa-picture-o"></i></div>-->
               </div>
-              <h3 class="post-title"><a href="#">Taller de Android</a></h3>
+              <h3 class="post-title"><a href="#">Taller: <?php echo $value->nombre; ?></a></h3>
               <div class="post-content">
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit. 
+                <p>
+                <?php echo $value->fecha_fin; ?>
+                <?php echo $value->fecha_inicio; ?>
+                <h5><?php echo $value->lugar; ?></h5>
+                    <h5><?php echo $value->costo; ?></h5>
                   <a class="read-more" href="#">Leer M&aacute;s...</a>
                 </p>
               </div>
-            </div>
+            </div>                    
+            <?php } ?>
 
-            <!-- Posts 2 -->
+             <?php 
+                   foreach ($industrial as $key => $value) {
+                ?>
             <div class="post-row item">
               <div class="left-meta-post">
-                <div class="post-date"><span class="day">26</span><span class="month">Sep</span></div>
-                <div class="post-type"><i class="fa fa-picture-o"></i></div>
+                <!--<div class="post-date"><span class="day"><?php echo $value->fecha_inicio; ?></span><span class="month"><?php echo $value->fecha_fin; ?></span></div>
+                <div class="post-type"><i class="fa fa-picture-o"></i></div>-->
               </div>
-              <h3 class="post-title"><a href="#">Taller Geolocalizaci&oacute;n</a></h3>
+              <h3 class="post-title"><a href="#">Visita Industrial a: <?php echo $value->nombre; ?></a></h3>
               <div class="post-content">
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit. 
+                <p>
+                <?php echo $value->fecha_fin; ?>
+                <?php echo $value->fecha_inicio; ?>
+                <h5><?php echo $value->lugar; ?></h5>
+                    <h5><?php echo $value->costo; ?></h5>
                   <a class="read-more" href="#">Leer M&aacute;s...</a>
                 </p>
               </div>
-            </div>
+            </div>                    
+            <?php } ?>
 
-            <!-- Posts 3 -->
+             <?php 
+                   foreach ($eventoSocial as $key => $value) {
+                ?>
             <div class="post-row item">
               <div class="left-meta-post">
-                <div class="post-date"><span class="day">26</span><span class="month">Dec</span></div>
-                <div class="post-type"><i class="fa fa-picture-o"></i></div>
+                <!--<div class="post-date"><span class="day"><?php echo $value->fecha_inicio; ?></span><span class="month"><?php echo $value->fecha_fin; ?></span></div>
+                <div class="post-type"><i class="fa fa-picture-o"></i></div>-->
               </div>
-              <h3 class="post-title"><a href="#">Taller AutoCad</a></h3>
+              <h3 class="post-title"><a href="#">Evento social: <?php echo $value->nombre; ?></a></h3>
               <div class="post-content">
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit. <a class="read-more" href="#">Read More...</a></p>
+                <p>
+                <?php echo $value->fecha_fin; ?>
+                <?php echo $value->fecha_inicio; ?>
+                <h5><?php echo $value->lugar; ?></h5>
+                    <h5><?php echo $value->costo; ?></h5>
+                  <a class="read-more" href="#">Leer M&aacute;s...</a>
+                </p>
               </div>
-            </div>
+            </div>                    
+            <?php } ?>
 
-            <!-- Posts 4 -->
-            <div class="post-row item">
-              <div class="left-meta-post">
-                <div class="post-date"><span class="day">28</span><span class="month">Sep</span></div>
-                <div class="post-type"><i class="fa fa-picture-o"></i></div>
-              </div>
-              <h3 class="post-title"><a href="#">Programaci&oacute;n Avanzada</a></h3>
-              <div class="post-content">
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit. <a class="read-more" href="#">Read More...</a></p>
-              </div>
-            </div>
-
-            <!-- Posts 5 -->
-            <div class="post-row item">
-              <div class="left-meta-post">
-                <div class="post-date"><span class="day">30</span><span class="month">Sep</span></div>
-                <div class="post-type"><i class="fa fa-picture-o"></i></div>
-              </div>
-              <h3 class="post-title"><a href="#">Taller Base de Datos</a></h3>
-              <div class="post-content">
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit. <a class="read-more" href="#">Read More...</a></p>
-              </div>
-            </div>
-
+            
           </div>
         </div>
         <!-- End Recent Posts Carousel -->
