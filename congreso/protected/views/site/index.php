@@ -630,19 +630,21 @@
 
       <!-- Start Team Members -->
       <div class="row">
-
+        <?php 
+        foreach ($participante as $key => $value) {
+        ?>
         <!-- Ponente Memebr 1 -->
         <div class="col-md-3 col-sm-6 col-xs-12" data-animation="fadeIn" data-animation-delay="03">
           <div class="team-member modern">
             <!-- Ponente Photo, Name & Position -->
             <div class="member-photo">
               <img alt="" src="images/ponentes/face_placehold.jpg" />
-              <div class="member-name">Johnathan Doe <span>Developer</span>
+              <div class="member-name"><?php echo $value->nombres; ?><span><?php echo $value->apellidos; ?></span>
               </div>
             </div>
             <!-- Ponente Words -->
             <div class="member-info">
-              <p>Duis Ponente irure dolor in reprehenderit in voluptate velit esse cillum dolore fugiat.</p>
+              <p><h2>email:</h2> <?php echo $value->email; ?></p>
             </div>
             <!-- Ponente Social Links -->
             <div class="member-socail">
@@ -655,85 +657,7 @@
           </div>
         </div>
         <!-- End Ponente 1 -->
-
-        <!-- Start Ponente 2 -->
-        <div class="col-md-3 col-sm-6 col-xs-12" data-animation="fadeIn" data-animation-delay="04">
-          <div class="team-member modern">
-            <!-- Memebr Photo, Name & Position -->
-            <div class="member-photo">
-              <img alt="" src="images/ponentes/face_placehold.jpg" />
-              <div class="member-name">Silly Sally <span>Developer</span>
-              </div>
-            </div>
-            <!-- Ponente Words -->
-            <div class="member-info">
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore fugiat.</p>
-            </div>
-
-            <!-- Ponente Social Links -->
-            <div class="member-socail">
-              <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
-              <a class="gplus" href="#"><i class="fa fa-google-plus"></i></a>
-              <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
-              <a class="flickr" href="#"><i class="fa fa-flickr"></i></a>
-              <a class="mail" href="#"><i class="fa fa-envelope"></i></a>
-            </div>
-          </div>
-        </div>
-        <!-- End Ponente 2 -->
-
-        <!-- Start Ponente 3 -->
-        <div class="col-md-3 col-sm-6 col-xs-12" data-animation="fadeIn" data-animation-delay="05">
-          <div class="team-member modern">
-            <!-- Ponente Photo, Name & Position -->
-            <div class="member-photo">
-              <img alt="" src="images/ponentes/face_placehold.jpg" />
-              <div class="member-name">Chris John <span>Developer</span>
-              </div>
-            </div>
-            <!-- Ponente Words -->
-            <div class="member-info">
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore fugiat.</p>
-            </div>
-
-            <!-- Ponente Social Links -->
-            <div class="member-socail">
-              <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
-              <a class="gplus" href="#"><i class="fa fa-google-plus"></i></a>
-              <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
-              <a class="flickr" href="#"><i class="fa fa-flickr"></i></a>
-              <a class="mail" href="#"><i class="fa fa-envelope"></i></a>
-            </div>
-          </div>
-        </div>
-        <!-- End Ponente 3 -->
-
-        <!-- Start Ponente 4 -->
-        <div class="col-md-3 col-sm-6 col-xs-12" data-animation="fadeIn" data-animation-delay="06">
-          <div class="team-member modern">
-            <!-- Memebr Photo, Name & Position -->
-            <div class="member-photo">
-              <img alt="" src="images/ponentes/face_placehold.jpg" />
-              <div class="member-name">Sara John <span>Developer</span>
-              </div>
-            </div>
-            <!-- Ponente Words -->
-            <div class="member-info">
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore fugiat.</p>
-            </div>
-
-            <!-- Ponente Social Links -->
-            <div class="member-socail">
-              <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
-              <a class="gplus" href="#"><i class="fa fa-google-plus"></i></a>
-              <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
-              <a class="flickr" href="#"><i class="fa fa-flickr"></i></a>
-              <a class="mail" href="#"><i class="fa fa-envelope"></i></a>
-            </div>
-          </div>
-        </div>
-        <!-- End Ponente 4 -->
-
+       <?php } ?>
       </div>
       <!-- End Ponente Members -->
 
