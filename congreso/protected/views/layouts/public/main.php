@@ -142,7 +142,9 @@
                             }
                         ?>
                           <li>
-                            <a href="<?php echo $value['url']; ?>" <?php echo $attr; ?>><?php echo $value['label']; ?></a>
+                            <a href="<?php echo $value['url']; ?>" <?php echo $attr; ?>>
+                                <?php echo $value['label']; ?>
+                            </a>
                           </li>
                         <?php endforeach; ?>
                         </ul>

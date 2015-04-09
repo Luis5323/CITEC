@@ -315,26 +315,53 @@
           <h4 class="classic-title"><span>Calendario de Actividades</span></h4>
           <div class="latest-posts-classic custom-carousel touch-carousel" data-appeared-items="2">
 
-            <!-- Posts 1 -->
+            <!-- Posts 1 (Talleres) -->
             <?php 
                    foreach ($talleres as $key => $value) {
                 ?>
             <div class="post-row item">
               <div class="left-meta-post">
-                <!--<div class="post-date"><span class="day"><?php echo $value->fecha_inicio; ?></span><span class="month"><?php echo $value->fecha_fin; ?></span></div>
-                <div class="post-type"><i class="fa fa-picture-o"></i></div>-->
+                <div class="post-date">
+                  <span class="day">
+                  <!-- Separacion de DATETIME -->
+                    <?php
+                    $fecha_i = preg_split("/[\s-]/", $value->fecha_inicio);
+                    $fecha_f = preg_split("/[\s-]/", $value->fecha_fin);
+                    $ano_i = $fecha_i[0];     $ano_f = $fecha_f[0];
+                    $mes_i = $fecha_i[1];     $mes_f = $fecha_f[1];
+                    $dia_i = $fecha_i[2];     $dia_f = $fecha_f[2];
+                    $hora_i = $fecha_i[3];    $hora_f = $fecha_f[3];
+                    echo  $dia_i; ?>
+                  </span>
+                  <span class="month">
+                    <!-- Seleccion del MES -->
+                    <?php
+                    $array = array(
+                      01=>'ENE', 02=>'FEB', 03=>'MAR',
+                      04=>'ABR', 05=>'MAY', 06=>'JUN',
+                      07=>'JUL', 08=>'AGO', 09=>'SEP',
+                      10=>'OCT', 11=>'NOV', 12=>'DIC' );
+                    echo $array[intval($mes_i)]?>
+                  </span>
+                </div>
+                <div class="post-type"><i class="fa fa-calendar-o"></i></div>
               </div>
+              <!-- Titulo de la Actividad -->
               <h3 class="post-title"><a href="#">Taller: <?php echo $value->nombre; ?></a></h3>
+              <!-- Informacion de la Actividad -->
               <div class="post-content">
                 <p>
-                <?php echo $value->fecha_fin; ?>
-                <?php echo $value->fecha_inicio; ?>
-                <h5><?php echo $value->lugar; ?></h5>
-                    <h5><?php echo $value->costo; ?></h5>
+                  <h5><?php echo 'Lugar: '.$value->lugar; ?></h5>
+                  <?php 
+                    echo '<b> Inicio: </b>'.$dia_i.'/'.$mes_i.'/'.$ano_i."<br>";
+                    echo '<b> Fin: </b>'.$dia_f.'/'.$mes_f.'/'.$ano_f; ?>
+                    <h5><?php echo '$'.$value->costo; ?></h5>
                   <a class="read-more" href="#">Leer M&aacute;s...</a>
                 </p>
               </div>
-            </div>                    
+            </div>   
+
+            <!-- Posts 2 (Visitas industriales) -->                 
             <?php } ?>
 
              <?php 
@@ -342,20 +369,47 @@
                 ?>
             <div class="post-row item">
               <div class="left-meta-post">
-                <!--<div class="post-date"><span class="day"><?php echo $value->fecha_inicio; ?></span><span class="month"><?php echo $value->fecha_fin; ?></span></div>
-                <div class="post-type"><i class="fa fa-picture-o"></i></div>-->
+                <div class="post-date">
+                  <span class="day">
+                    <!-- Separacion de DATETIME -->
+                    <?php
+                    $fecha_i = preg_split("/[\s-]/", $value->fecha_inicio);
+                    $fecha_f = preg_split("/[\s-]/", $value->fecha_fin);
+                    $ano_i = $fecha_i[0];     $ano_f = $fecha_f[0];
+                    $mes_i = $fecha_i[1];     $mes_f = $fecha_f[1];
+                    $dia_i = $fecha_i[2];     $dia_f = $fecha_f[2];
+                    $hora_i = $fecha_i[3];    $hora_f = $fecha_f[3];
+                    echo  $dia_i; ?>
+                  </span>
+                  <span class="month">
+                    <!-- Seleccion del MES -->
+                    <?php
+                    $array = array(
+                      01=>'ENE', 02=>'FEB', 03=>'MAR',
+                      04=>'ABR', 05=>'MAY', 06=>'JUN',
+                      07=>'JUL', 08=>'AGO', 09=>'SEP',
+                      10=>'OCT', 11=>'NOV', 12=>'DIC' );
+                    echo $array[intval($mes_i)]?>
+                  </span>
+                </div>
+                <div class="post-type"><i class="fa fa-calendar-o"></i>
+                </div>
               </div>
-              <h3 class="post-title"><a href="#">Visita Industrial a: <?php echo $value->nombre; ?></a></h3>
+              <!-- Titulo de la Actividad -->
+              <h3 class="post-title"><a href="#">Visita Industrial: <?php echo $value->nombre; ?></a></h3>
               <div class="post-content">
                 <p>
-                <?php echo $value->fecha_fin; ?>
-                <?php echo $value->fecha_inicio; ?>
-                <h5><?php echo $value->lugar; ?></h5>
-                    <h5><?php echo $value->costo; ?></h5>
+                  <h5><?php echo 'Lugar: '.$value->lugar; ?></h5>
+                  <?php 
+                    echo '<b> Inicio: </b>'.$dia_i.'/'.$mes_i.'/'.$ano_i."<br>";
+                    echo '<b> Fin: </b>'.$dia_f.'/'.$mes_f.'/'.$ano_f; ?>
+                    <h5><?php echo '$'.$value->costo; ?></h5>
                   <a class="read-more" href="#">Leer M&aacute;s...</a>
                 </p>
               </div>
-            </div>                    
+            </div>  
+
+            <!-- Posts 3 (Evento Social) -->          
             <?php } ?>
 
              <?php 
@@ -363,16 +417,39 @@
                 ?>
             <div class="post-row item">
               <div class="left-meta-post">
-                <!--<div class="post-date"><span class="day"><?php echo $value->fecha_inicio; ?></span><span class="month"><?php echo $value->fecha_fin; ?></span></div>
-                <div class="post-type"><i class="fa fa-picture-o"></i></div>-->
+                <div class="post-date">
+                  <span class="day">
+                    <!-- Separacion de DATETIME -->
+                    <?php
+                    $fecha_i = preg_split("/[\s-]/", $value->fecha_inicio);
+                    $fecha_f = preg_split("/[\s-]/", $value->fecha_fin);
+                    $ano_i = $fecha_i[0];     $ano_f = $fecha_f[0];
+                    $mes_i = $fecha_i[1];     $mes_f = $fecha_f[1];
+                    $dia_i = $fecha_i[2];     $dia_f = $fecha_f[2];
+                    $hora_i = $fecha_i[3];    $hora_f = $fecha_f[3];
+                    echo  $dia_i; ?>
+                  </span>
+                  <span class="month">
+                    <!-- Seleccion del MES -->
+                    <?php
+                    $array = array(
+                      01=>'ENE', 02=>'FEB', 03=>'MAR',
+                      04=>'ABR', 05=>'MAY', 06=>'JUN',
+                      07=>'JUL', 08=>'AGO', 09=>'SEP',
+                      10=>'OCT', 11=>'NOV', 12=>'DIC' );
+                    echo $array[intval($mes_i)]?>
+                  </span>
+                </div>
+                <div class="post-type"><i class="fa fa-calendar-o"></i></div>
               </div>
               <h3 class="post-title"><a href="#">Evento social: <?php echo $value->nombre; ?></a></h3>
               <div class="post-content">
                 <p>
-                <?php echo $value->fecha_fin; ?>
-                <?php echo $value->fecha_inicio; ?>
-                <h5><?php echo $value->lugar; ?></h5>
-                    <h5><?php echo $value->costo; ?></h5>
+                  <h5><?php echo 'Lugar: '.$value->lugar; ?></h5>
+                  <?php 
+                    echo '<b> Inicio: </b>'.$dia_i.'/'.$mes_i.'/'.$ano_i."<br>";
+                    echo '<b> Fin: </b>'.$dia_f.'/'.$mes_f.'/'.$ano_f; ?>
+                    <h5><?php echo '$'.$value->costo; ?></h5>
                   <a class="read-more" href="#">Leer M&aacute;s...</a>
                 </p>
               </div>
@@ -645,7 +722,7 @@
             </div>
             <!-- Ponente Words -->
             <div class="member-info">
-              <p><h2>email:</h2> <?php echo $value->email; ?></p>
+              <p><h2>Email:</h2> <?php echo $value->email; ?></p>
             </div>
             <!-- Ponente Social Links -->
             <div class="member-socail">
@@ -750,6 +827,30 @@
   </div>
 </div>                 
 
+<!-- Modal Inicio Sesion -->
+<div class="modal fade" id="modal_sesion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Inicio de Sesi&oacute;n</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row"> 
+          <div class="col-md-12">
+
+            
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-large btn-success">Entrar</button>
+        <button type="button" class="btn btn-large btn-danger" data-dismiss="modal">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- Modal Registro -->
 <div class="modal fade" id="modal_registro" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
@@ -816,7 +917,6 @@
                   <?php echo $form->error($model,'veri_contraseña'); ?>           
                 </div>
               </div>
-              <button type="submit" class="btn btn-large btn-success">Registrar</button>
             </fieldset>
 
             <?php $this->endWidget(); ?>
@@ -824,7 +924,8 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary btn-lg" data-dismiss="modal">Cerrar</button>
+        <button type="submit" class="btn btn-large btn-success">Registrar</button>
+        <button type="button" class="btn btn-large btn-danger" data-dismiss="modal">Cancelar</button>
       </div>
     </div>
   </div>
