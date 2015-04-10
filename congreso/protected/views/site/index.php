@@ -155,11 +155,16 @@
         <center>
           <?php echo $evento->mas_informacion; ?>
           <br><br>
-          <b>
-            <p>Inicio: <?php echo $evento->fecha_inicio; ?></p>
-            <br>
-            <p>Fin: <?php echo $evento->fecha_fin; ?></p>
-          </b>
+          <!-- Separacion de DATETIME -->
+            <?php
+            $fecha_i = preg_split("/[\s-]/", $evento->fecha_inicio);
+            $fecha_f = preg_split("/[\s-]/", $evento->fecha_fin);
+            $ano_i = $fecha_i[0];     $ano_f = $fecha_f[0];
+            $mes_i = $fecha_i[1];     $mes_f = $fecha_f[1];
+            $dia_i = $fecha_i[2];     $dia_f = $fecha_f[2];
+            $hora_i = $fecha_i[3];    $hora_f = $fecha_f[3];
+            echo  '<b>Iniciamos el d&iacute;a </b>'.$dia_i.'/'.$mes_i.'/'.$ano_i.'<b> a las </b>'.$hora_i.'<br>';            
+            echo  '<b>Clausura: </b>'.$dia_f.'/'.$mes_f.'/'.$ano_f; ?>
           <br>
           <img src="<?php echo $evento->logotipo; ?>">
         </center>
@@ -839,7 +844,6 @@
         <div class="row"> 
           <div class="col-md-12">
 
-            
           </div>
         </div>
       </div>
@@ -900,6 +904,7 @@
                   </div>
                 </div>
 
+                <!--contraseña-->
                 <div class="form-group">
                  <div class="controls">
                   <?php echo $form->labelEx($model,'contraseña'); ?>

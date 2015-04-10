@@ -133,17 +133,20 @@
                         <!-- Start Navigation List -->
                         <ul class="nav navbar-nav navbar-right">
                             <?php
-                        $attr = "";
-                        foreach ($this->menu as $key => $value):
-                            if (isset($value['attr'])) {
-                                foreach ($value['attr'] as $key2 => $value2) {
-                                    $attr .= $key2 . '="' . $value2 .'" ';
+                            $attr = "";
+                            foreach ($this->menu as $key => $value):
+                                if (isset($value['attr'])) {
+                                    foreach ($value['attr'] as $key2 => $value2) {
+                                        //echo "Key: $key2; Value: $value2<br />\n";
+                                        $attr .= $key2 . '="' . $value2 .'" ';
+                                    }
                                 }
-                            }
-                        ?>
+                            ?>
                           <li>
                             <a href="<?php echo $value['url']; ?>" <?php echo $attr; ?>>
-                                <?php echo $value['label']; ?>
+                                <?php 
+                                    $attr = "";
+                                    echo $value['label']; ?>
                             </a>
                           </li>
                         <?php endforeach; ?>
