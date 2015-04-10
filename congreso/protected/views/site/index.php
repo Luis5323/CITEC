@@ -879,11 +879,19 @@
         <div class="row"> 
           <div class="col-md-12">
             <?php $form=$this->beginWidget('CActiveForm', array(
+<<<<<<< HEAD
               'id'=>'participantes-form','enableAjaxValidation'=>false,
               )
               ); ?>
 
               <!--campos de registro-->
+=======
+              'id'=>'login-form','enableAjaxValidation'=>false,
+              )
+              ); ?>
+
+              <!--campos de login-->
+>>>>>>> efbd9febed3b6d04a64d0496a6c6dc9c0f04ba03
               <fieldset>
                 <!--email-->
                 <div class="form-group">
@@ -906,14 +914,29 @@
               </div>
             </fieldset>
 
+<<<<<<< HEAD
+            <?php $this->endWidget(); ?>
+=======
+          <?php echo CHtml::submitButton('Entrar',
+          array('class'=>'btn btn-large btn-success')); ?> 
+>>>>>>> efbd9febed3b6d04a64d0496a6c6dc9c0f04ba03
+
+          <?php echo CHtml::submitButton('Cancelar',
+          array('class'=>'btn btn-large btn-danger','data-dismiss'=>'modal')); ?> 
+
             <?php $this->endWidget(); ?>
 
+         </div>
+        </div>
           </div>
         </div>
       </div>
+    </div>
+      </div>
+
       <div class="modal-footer">
-        <button type="submit" class="btn btn-large btn-success">Entrar</button>
-        <button type="button" class="btn btn-large btn-danger" data-dismiss="modal">Cancelar</button>
+        <!-- <button type="submit" class="btn btn-large btn-success">Entrar</button> -->
+        <!-- <button type="button" class="btn btn-large btn-danger" data-dismiss="modal">Cancelar</button> -->
       </div>
     </div>
   </div>
@@ -991,6 +1014,7 @@
             <?php $this->endWidget(); ?>
           </div>
         </div>
+        <p align=right class="note"><b>Los campos con <font color="red">*</font> son requeridos.</b></p>
       </div>
       <div class="modal-footer">
         <button type="submit" class="btn btn-large btn-success">Registrar</button>

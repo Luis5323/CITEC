@@ -1258,3 +1258,116 @@ REQUEST_URI=/TAPW/yii/CITEC/congreso/
 in C:\xampp\htdocs\TAPW\yii\CITEC\congreso\protected\views\site\index.php (845)
 in C:\xampp\htdocs\TAPW\yii\CITEC\congreso\protected\controllers\SiteController.php (107)
 in C:\xampp\htdocs\TAPW\yii\CITEC\congreso\index.php (13)
+2015/04/10 07:13:43 [error] [exception.CException] exception 'CException' with message 'Property "Participantes.rememberMe" is not defined.' in C:\xampp\htdocs\TAPW\yii\CITEC\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\TAPW\yii\CITEC\framework\db\ar\CActiveRecord.php(145): CComponent->__get('rememberMe')
+#1 C:\xampp\htdocs\TAPW\yii\CITEC\framework\web\helpers\CHtml.php(2728): CActiveRecord->__get('rememberMe')
+#2 C:\xampp\htdocs\TAPW\yii\CITEC\framework\web\helpers\CHtml.php(1922): CHtml::resolveValue(Object(Participantes), 'rememberMe')
+#3 C:\xampp\htdocs\TAPW\yii\CITEC\framework\web\widgets\CActiveForm.php(898): CHtml::activeCheckBox(Object(Participantes), 'rememberMe', Array)
+#4 C:\xampp\htdocs\TAPW\yii\CITEC\congreso\protected\views\site\index.php(913): CActiveForm->checkBox(Object(Participantes), 'rememberMe')
+#5 C:\xampp\htdocs\TAPW\yii\CITEC\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\TAPW\yii\CITEC\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\TAPW\yii\CITEC\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\TAPW\yii\CITEC\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#9 C:\xampp\htdocs\TAPW\yii\CITEC\congreso\protected\controllers\SiteController.php(107): CController->render('index', Array)
+#10 C:\xampp\htdocs\TAPW\yii\CITEC\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#11 C:\xampp\htdocs\TAPW\yii\CITEC\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\TAPW\yii\CITEC\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\TAPW\yii\CITEC\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\TAPW\yii\CITEC\framework\web\CWebApplication.php(282): CController->run('')
+#15 C:\xampp\htdocs\TAPW\yii\CITEC\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#16 C:\xampp\htdocs\TAPW\yii\CITEC\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\TAPW\yii\CITEC\congreso\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/TAPW/yii/CITEC/congreso/
+---
+2015/04/10 07:16:47 [error] [exception.CException] exception 'CException' with message 'Property "Participantes.rememberMe" is not defined.' in C:\xampp\htdocs\TAPW\yii\CITEC\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\TAPW\yii\CITEC\framework\db\ar\CActiveRecord.php(145): CComponent->__get('rememberMe')
+#1 C:\xampp\htdocs\TAPW\yii\CITEC\framework\web\helpers\CHtml.php(2728): CActiveRecord->__get('rememberMe')
+#2 C:\xampp\htdocs\TAPW\yii\CITEC\framework\web\helpers\CHtml.php(1922): CHtml::resolveValue(Object(Participantes), 'rememberMe')
+#3 C:\xampp\htdocs\TAPW\yii\CITEC\framework\web\widgets\CActiveForm.php(898): CHtml::activeCheckBox(Object(Participantes), 'rememberMe', Array)
+#4 C:\xampp\htdocs\TAPW\yii\CITEC\congreso\protected\views\site\index.php(913): CActiveForm->checkBox(Object(Participantes), 'rememberMe')
+#5 C:\xampp\htdocs\TAPW\yii\CITEC\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\TAPW\yii\CITEC\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\TAPW\yii\CITEC\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\TAPW\yii\CITEC\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#9 C:\xampp\htdocs\TAPW\yii\CITEC\congreso\protected\controllers\SiteController.php(107): CController->render('index', Array)
+#10 C:\xampp\htdocs\TAPW\yii\CITEC\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#11 C:\xampp\htdocs\TAPW\yii\CITEC\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\TAPW\yii\CITEC\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\TAPW\yii\CITEC\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\TAPW\yii\CITEC\framework\web\CWebApplication.php(282): CController->run('')
+#15 C:\xampp\htdocs\TAPW\yii\CITEC\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#16 C:\xampp\htdocs\TAPW\yii\CITEC\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\TAPW\yii\CITEC\congreso\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/TAPW/yii/CITEC/congreso/
+---
+2015/04/10 07:16:51 [error] [exception.CException] exception 'CException' with message 'Property "Participantes.rememberMe" is not defined.' in C:\xampp\htdocs\TAPW\yii\CITEC\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\TAPW\yii\CITEC\framework\db\ar\CActiveRecord.php(145): CComponent->__get('rememberMe')
+#1 C:\xampp\htdocs\TAPW\yii\CITEC\framework\web\helpers\CHtml.php(2728): CActiveRecord->__get('rememberMe')
+#2 C:\xampp\htdocs\TAPW\yii\CITEC\framework\web\helpers\CHtml.php(1922): CHtml::resolveValue(Object(Participantes), 'rememberMe')
+#3 C:\xampp\htdocs\TAPW\yii\CITEC\framework\web\widgets\CActiveForm.php(898): CHtml::activeCheckBox(Object(Participantes), 'rememberMe', Array)
+#4 C:\xampp\htdocs\TAPW\yii\CITEC\congreso\protected\views\site\index.php(913): CActiveForm->checkBox(Object(Participantes), 'rememberMe')
+#5 C:\xampp\htdocs\TAPW\yii\CITEC\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\TAPW\yii\CITEC\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\TAPW\yii\CITEC\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\TAPW\yii\CITEC\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#9 C:\xampp\htdocs\TAPW\yii\CITEC\congreso\protected\controllers\SiteController.php(107): CController->render('index', Array)
+#10 C:\xampp\htdocs\TAPW\yii\CITEC\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#11 C:\xampp\htdocs\TAPW\yii\CITEC\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\TAPW\yii\CITEC\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\TAPW\yii\CITEC\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\TAPW\yii\CITEC\framework\web\CWebApplication.php(282): CController->run('')
+#15 C:\xampp\htdocs\TAPW\yii\CITEC\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#16 C:\xampp\htdocs\TAPW\yii\CITEC\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\TAPW\yii\CITEC\congreso\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/TAPW/yii/CITEC/congreso/
+---
+2015/04/10 23:00:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+' in C:\xampp\htdocs\CITEC\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\xampp\htdocs\CITEC\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 C:\xampp\htdocs\CITEC\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\CITEC\framework\base\CModule.php(394): CDbConnection->init()
+#3 C:\xampp\htdocs\CITEC\framework\base\CApplication.php(458): CModule->getComponent('db')
+#4 C:\xampp\htdocs\CITEC\framework\db\ar\CActiveRecord.php(637): CApplication->getDb()
+#5 C:\xampp\htdocs\CITEC\framework\db\ar\CActiveRecord.php(1433): CActiveRecord->getDbConnection()
+#6 C:\xampp\htdocs\CITEC\framework\db\ar\CActiveRecord.php(1489): CActiveRecord->getTableAlias(true)
+#7 C:\xampp\htdocs\CITEC\congreso\protected\controllers\SiteController.php(44): CActiveRecord->findByPk('1')
+#8 C:\xampp\htdocs\CITEC\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#9 C:\xampp\htdocs\CITEC\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\CITEC\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\CITEC\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\CITEC\framework\web\CWebApplication.php(282): CController->run('')
+#13 C:\xampp\htdocs\CITEC\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#14 C:\xampp\htdocs\CITEC\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\CITEC\congreso\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/CITEC/congreso/
+---
+2015/04/10 23:00:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+' in C:\xampp\htdocs\CITEC\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\xampp\htdocs\CITEC\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 C:\xampp\htdocs\CITEC\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\CITEC\framework\base\CModule.php(394): CDbConnection->init()
+#3 C:\xampp\htdocs\CITEC\framework\base\CApplication.php(458): CModule->getComponent('db')
+#4 C:\xampp\htdocs\CITEC\framework\db\ar\CActiveRecord.php(637): CApplication->getDb()
+#5 C:\xampp\htdocs\CITEC\framework\db\ar\CActiveRecord.php(1433): CActiveRecord->getDbConnection()
+#6 C:\xampp\htdocs\CITEC\framework\db\ar\CActiveRecord.php(1489): CActiveRecord->getTableAlias(true)
+#7 C:\xampp\htdocs\CITEC\congreso\protected\controllers\SiteController.php(44): CActiveRecord->findByPk('1')
+#8 C:\xampp\htdocs\CITEC\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#9 C:\xampp\htdocs\CITEC\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\CITEC\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\CITEC\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\CITEC\framework\web\CWebApplication.php(282): CController->run('')
+#13 C:\xampp\htdocs\CITEC\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#14 C:\xampp\htdocs\CITEC\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\CITEC\congreso\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/CITEC/congreso/
+---
