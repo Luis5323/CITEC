@@ -879,19 +879,11 @@
         <div class="row"> 
           <div class="col-md-12">
             <?php $form=$this->beginWidget('CActiveForm', array(
-<<<<<<< HEAD
+
               'id'=>'participantes-form','enableAjaxValidation'=>false,
               )
               ); ?>
 
-              <!--campos de registro-->
-=======
-              'id'=>'login-form','enableAjaxValidation'=>false,
-              )
-              ); ?>
-
-              <!--campos de login-->
->>>>>>> efbd9febed3b6d04a64d0496a6c6dc9c0f04ba03
               <fieldset>
                 <!--email-->
                 <div class="form-group">
@@ -914,12 +906,8 @@
               </div>
             </fieldset>
 
-<<<<<<< HEAD
-            <?php $this->endWidget(); ?>
-=======
           <?php echo CHtml::submitButton('Entrar',
           array('class'=>'btn btn-large btn-success')); ?> 
->>>>>>> efbd9febed3b6d04a64d0496a6c6dc9c0f04ba03
 
           <?php echo CHtml::submitButton('Cancelar',
           array('class'=>'btn btn-large btn-danger','data-dismiss'=>'modal')); ?> 
