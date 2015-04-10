@@ -878,13 +878,48 @@
       <div class="modal-body">
         <div class="row"> 
           <div class="col-md-12">
+            <?php $form=$this->beginWidget('CActiveForm', array(
+              'id'=>'login-form','enableAjaxValidation'=>false,
+              )
+              ); ?>
+
+              <!--campos de login-->
+              <fieldset>
+                <!--email-->
+                <div class="form-group">
+                  <div class="controls">
+                    <?php echo $form->labelEx($model,'email'); ?>
+                    <?php echo $form->textField($model,'email',
+                    array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'usuario@correo.com')); ?>
+                    <?php echo $form->error($model,'email'); ?>
+                  </div>
+                </div>
+
+                <!--contraseña-->
+                <div class="form-group">
+                 <div class="controls">
+                  <?php echo $form->labelEx($model,'contraseña'); ?>
+                  <?php echo $form->passwordField($model,'contraseña',
+                  array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Contraseña')); ?>
+                  <?php echo $form->error($model,'contraseña'); ?>
+                </div>
+              </div>
+            </fieldset>
+
+          <?php echo CHtml::submitButton('Entrar',
+          array('class'=>'btn btn-large btn-success')); ?> 
+
+          <?php echo CHtml::submitButton('Cancelar',
+          array('class'=>'btn btn-large btn-danger','data-dismiss'=>'modal')); ?> 
+
+            <?php $this->endWidget(); ?>
 
           </div>
         </div>
       </div>
       <div class="modal-footer">
-        <button type="submit" class="btn btn-large btn-success">Entrar</button>
-        <button type="button" class="btn btn-large btn-danger" data-dismiss="modal">Cancelar</button>
+        <!-- <button type="submit" class="btn btn-large btn-success">Entrar</button> -->
+        <!-- <button type="button" class="btn btn-large btn-danger" data-dismiss="modal">Cancelar</button> -->
       </div>
     </div>
   </div>
