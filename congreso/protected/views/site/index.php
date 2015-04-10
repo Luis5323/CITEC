@@ -18,7 +18,7 @@
         <div class="slider-content">
           <div class="col-md-12 text-center">
             <h2 class="animated2">
-              <span>Bienvenidos al <strong>CITEC 2015</strong></span>
+              <span>Bienvenidos a <strong>CITEC 2015</strong></span>
             </h2>
             <h3 class="animated3">
               <span>Inspirando tecnolog&iacute;a</span>
@@ -30,7 +30,7 @@
       </div>
       <!--/ Carousel item end -->
       <div class="item">
-        <img class="img-responsive" src="images/slider/bg3.jpg" alt="slider">
+        <img class="img-responsive" src="images/slider/conferencia.jpg" alt="slider">
         <div class="slider-content">
           <div class="col-md-12 text-center">
             <h2 class="animated4">
@@ -46,7 +46,7 @@
       </div>
       <!--/ Carousel item end -->
       <div class="item">
-        <img class="img-responsive" src="images/slider/bg3.jpg" alt="slider">
+        <img class="img-responsive" src="images/slider/evento.jpg" alt="slider">
         <div class="slider-content">
           <div class="col-md-12 text-center">
             <h2 class="animated7 white">
@@ -225,9 +225,9 @@
       <!-- Start Recent Projects Carousel -->
       <ul id="portfolio-list" data-animated="fadeIn">
         <li>
-          <img src="images/Portfolio/1.png" alt="" />
+          <img src="images/Portfolio/comida.jpg" alt="" />
           <div class="portfolio-item-content">
-            <span class="header">Town winter 2013</span>
+            <span class="header">Tracidicional comida de Sistemas</span>
             <p class="body">web develpment, design</p>
           </div>
           <a href="#"><i class="more">+</i></a>
@@ -747,6 +747,41 @@
     </div><!-- .container -->
   </div>
   <!-- End Team Member Section -->
+
+  <!-- Start Descargables Section -->
+<div id="descargables">
+<div class=" section pricing-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <!-- Start Big Heading -->
+        <div class="big-title text-center">
+          <h1><strong>Formatos</strong> Descargables</h1>
+        </div>
+        <!-- End Big Heading -->
+
+        <!-- Text -->
+        <p class="text-center">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="images/doc.png" alt="...">
+      <div class="caption">
+        <h3>Formato</h3>
+        <p>Conozca y descargue el formato para el artículo final.</p>
+        <p><a href="formatos/programa_sitec.pdf" class="btn btn-success" role="button">Ver Documento</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+
+</div>
+</div>
+</div>
+</div>
+</center>
+<!-- End Descargables Section -->
 
 
   <!-- Start Footer Section -->
