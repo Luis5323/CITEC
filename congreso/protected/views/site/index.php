@@ -878,6 +878,35 @@
       <div class="modal-body">
         <div class="row"> 
           <div class="col-md-12">
+            <?php $form=$this->beginWidget('CActiveForm', array(
+              'id'=>'participantes-form','enableAjaxValidation'=>false,
+              )
+              ); ?>
+
+              <!--campos de registro-->
+              <fieldset>
+                <!--email-->
+                <div class="form-group">
+                  <div class="controls">
+                    <?php echo $form->labelEx($model,'email'); ?>
+                    <?php echo $form->textField($model,'email',
+                    array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'usuario@correo.com')); ?>
+                    <?php echo $form->error($model,'email'); ?>
+                  </div>
+                </div>
+
+                <!--contraseña-->
+                <div class="form-group">
+                 <div class="controls">
+                  <?php echo $form->labelEx($model,'contraseña'); ?>
+                  <?php echo $form->passwordField($model,'contraseña',
+                  array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Contraseña')); ?>
+                  <?php echo $form->error($model,'contraseña'); ?>
+                </div>
+              </div>
+            </fieldset>
+
+            <?php $this->endWidget(); ?>
 
           </div>
         </div>
