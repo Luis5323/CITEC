@@ -906,11 +906,12 @@
                     <?php echo $form->error($model,'contraseña'); ?>
                   </div>
                 </div>
-                <p align=right class="note"><b>Los campos con <font color="red">*</font> son requeridos.</b></p>
-
+                <p align=right class="note">
+                  <b>Los campos con <font color="red">*</font> son requeridos.<br><br>
+                    <a href="#" data-toggle='modal' data-target='#modal_registro' data-dismiss='modal'>¿A&uacute;n no tienes cuenta? Registrate</a>
+                  </b>
+                </p>
                 <?php //echo CHtml::submitButton('Entrar',array('class'=>'btn btn-large btn-success')); ?>
-
-                <?php $this->endWidget(); ?>
             </div><!-- form -->
 
           </div>
@@ -919,6 +920,7 @@
       <div class="modal-footer">
         <button type="submit" class="btn btn-large btn-success">Entrar</button>
         <button type="button" class="btn btn-large btn-danger" data-dismiss="modal">Cancelar</button>
+        <?php $this->endWidget(); ?>
       </div>
     </div>
   </div>
@@ -992,20 +994,24 @@
                 </div>
               </div>
             </fieldset>
-            <?php echo CHtml::submitButton('Registrar',
+            <?php /*echo CHtml::submitButton('Registrar',
             array('class'=>'btn btn-large btn-success')); ?>
 
             <?php echo CHtml::submitButton('Cancelar',
-            array('class'=>'btn btn-large btn-success', 'data-dismiss'=>'modal')); ?>
-
-            <?php $this->endWidget(); ?>
+            array('class'=>'btn btn-large btn-danger', 'data-dismiss'=>'modal'));*/ ?>
           </div>
         </div>
-        <p align=right class="note"><b>Los campos con <font color="red">*</font> son requeridos.</b></p>
+        <p align=right class="note">
+          <b>Los campos con <font color="red">*</font> son requeridos.<br><br>
+            <a href="#" data-toggle='modal' data-target='#modal_sesion' data-dismiss='modal'>¿Ya tienes cuenta? Inicia Sesi&oacute;n</a>
+          </b>      
+        </p>
+
       </div>
       <div class="modal-footer">
-<!--         <button type="submit" class="btn btn-large btn-success">Registrar</button>
-        <button type="button" class="btn btn-large btn-danger" data-dismiss="modal">Cancelar</button> -->
+        <button type="submit" class="btn btn-large btn-success">Registrar</button>
+        <button type="button" class="btn btn-large btn-danger" data-dismiss="modal">Cancelar</button>
+        <?php $this->endWidget(); ?>
       </div>
     </div>
   </div>

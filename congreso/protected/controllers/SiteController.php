@@ -84,7 +84,7 @@ class SiteController extends Controller
 		{
 			$model->attributes=$_POST['Participantes'];
 			if($model->save())
-				$this->redirect(array('usuarioRegistrado','id'=>$model->id_participante));
+				$this->redirect(array('#usuarioRegistrado','id'=>$model->id_participante));
 		}
 
 		$this->menu=array(
