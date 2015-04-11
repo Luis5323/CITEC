@@ -878,6 +878,7 @@
       <div class="modal-body">
         <div class="row"> 
           <div class="col-md-12">
+<<<<<<< HEAD
 
             <div class="form-group">
               <?php $form=$this->beginWidget('CActiveForm', array(
@@ -912,6 +913,8 @@
 
                 <?php $this->endWidget(); ?>
             </div><!-- form -->
+=======
+>>>>>>> parent of bb0091c... login
 
           </div>
         </div>
