@@ -878,56 +878,54 @@
       <div class="modal-body">
         <div class="row"> 
           <div class="col-md-12">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-            <div class="form-group">
-              <?php $form=$this->beginWidget('CActiveForm', array(
-                'id'=>'login-form',
-                'enableClientValidation'=>true,
-                'clientOptions'=>array(
-                  'validateOnSubmit'=>true,
-                  ),
-                  )); ?>
+            <?php $form=$this->beginWidget('CActiveForm', array(
 
-                  <div class="form-group">
-                    <div class="controls">
-                      <?php echo $form->labelEx($model,'email'); ?>
-                      <?php echo $form->textField($model,'email',
-                      array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'usuario@correo.com')); ?>
-                      <?php echo $form->error($model,'email'); ?>
-                    </div>
-                  </div>
+              'id'=>'participantes-form','enableAjaxValidation'=>false,
+              )
+              ); ?>
 
-                  <!--contraseña-->
-                  <div class="form-group">
-                   <div class="controls">
-                    <?php echo $form->labelEx($model,'contraseña'); ?>
-                    <?php echo $form->passwordField($model,'contraseña',
-                    array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Contraseña')); ?>
-                    <?php echo $form->error($model,'contraseña'); ?>
+              <fieldset>
+                <!--email-->
+                <div class="form-group">
+                  <div class="controls">
+                    <?php echo $form->labelEx($model,'email'); ?>
+                    <?php echo $form->textField($model,'email',
+                    array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'usuario@correo.com')); ?>
+                    <?php echo $form->error($model,'email'); ?>
                   </div>
                 </div>
-                <p align=right class="note"><b>Los campos con <font color="red">*</font> son requeridos.</b></p>
 
-                <?php //echo CHtml::submitButton('Entrar',array('class'=>'btn btn-large btn-success')); ?>
+                <!--contraseña-->
+                <div class="form-group">
+                 <div class="controls">
+                  <?php echo $form->labelEx($model,'contraseña'); ?>
+                  <?php echo $form->passwordField($model,'contraseña',
+                  array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Contraseña')); ?>
+                  <?php echo $form->error($model,'contraseña'); ?>
+                </div>
+              </div>
+            </fieldset>
 
-                <?php $this->endWidget(); ?>
-            </div><!-- form -->
-=======
->>>>>>> parent of bb0091c... login
-=======
->>>>>>> parent of bb0091c... login
-=======
->>>>>>> parent of bb0091c... login
+          <?php echo CHtml::submitButton('Entrar',
+          array('class'=>'btn btn-large btn-success')); ?> 
 
+          <?php echo CHtml::submitButton('Cancelar',
+          array('class'=>'btn btn-large btn-danger','data-dismiss'=>'modal')); ?> 
+
+            <?php $this->endWidget(); ?>
+
+         </div>
+        </div>
           </div>
         </div>
       </div>
+    </div>
+      </div>
+
       <div class="modal-footer">
-        <button type="submit" class="btn btn-large btn-success">Entrar</button>
-        <button type="button" class="btn btn-large btn-danger" data-dismiss="modal">Cancelar</button>
+        <!-- <button type="submit" class="btn btn-large btn-success">Entrar</button> -->
+        <!-- <button type="button" class="btn btn-large btn-danger" data-dismiss="modal">Cancelar</button> -->
       </div>
     </div>
   </div>
