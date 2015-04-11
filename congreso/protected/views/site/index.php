@@ -878,6 +878,7 @@
       <div class="modal-body">
         <div class="row"> 
           <div class="col-md-12">
+<<<<<<< HEAD
 
             <?php $form=$this->beginWidget('CActiveForm', array(
 
@@ -914,6 +915,8 @@
           array('class'=>'btn btn-large btn-danger','data-dismiss'=>'modal')); ?> 
 
             <?php $this->endWidget(); ?>
+=======
+>>>>>>> parent of bb0091c... login
 
          </div>
         </div>
@@ -924,8 +927,8 @@
       </div>
 
       <div class="modal-footer">
-        <!-- <button type="submit" class="btn btn-large btn-success">Entrar</button> -->
-        <!-- <button type="button" class="btn btn-large btn-danger" data-dismiss="modal">Cancelar</button> -->
+        <button type="submit" class="btn btn-large btn-success">Entrar</button>
+        <button type="button" class="btn btn-large btn-danger" data-dismiss="modal">Cancelar</button>
       </div>
     </div>
   </div>
