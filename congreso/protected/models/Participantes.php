@@ -42,6 +42,7 @@ class Participantes extends CActiveRecord
 			array('veri_contraseña','safe'),// nueva cosas
 			array('email','email'),//validador de email
 			array('veri_contraseña','compare','compareAttribute'=>'contraseña','operator'=>'='),//cosa nueva
+			array('email','unique'),//validador de email
 		);
 	}
 
