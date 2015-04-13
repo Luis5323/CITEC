@@ -100,7 +100,7 @@ class ParticipantesController extends Controller
 				$this->redirect(array('view','id'=>$model->id_participante));
 			echo "Registrado";
 			$this->redirect(Yii::app()->request->urlReferrer);
-		}
+		    }
 		}
 
 		$this->render('update',array(
