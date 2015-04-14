@@ -25,7 +25,7 @@ class SiteController extends Controller
 	 * This is the default 'index' action that is invoked
 	 * when an action is not explicitly requested by users.
 	 */
-	public function actionUsuarioRegistrado(){
+	/*public function actionUsuarioRegistrado(){
 		$this->layout='//layouts/public/column1';
 
 		$this->menu=array(
@@ -35,7 +35,7 @@ class SiteController extends Controller
 		$this->render('usuarioRegistrado',array(
 			
 		));
-	}
+	}*/
 	public function actionIndex()
 	{
 		// renders the view file 'protected/views/site/index.php'
