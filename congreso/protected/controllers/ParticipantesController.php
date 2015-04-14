@@ -98,11 +98,16 @@ class ParticipantesController extends Controller
 			if($model->save())
 			{
 				$this->redirect(array('view','id'=>$model->id_participante));
-			echo "Registrado";
-			$this->redirect(Yii::app()->request->urlReferrer);
+				echo "Registrado";
+				$this->redirect(Yii::app()->request->urlReferrer);
 		    }
-		}
-
+		    else 
+		    {
+		    	$this->redirect(Yii::app()->request->urlReferrer);
+		    	echo "No Registrado";
+		    	unset($_POST['Participantes']);    
+		    }
+		}  
 		$this->render('update',array(
 			'model'=>$model,
 		));
