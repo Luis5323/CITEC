@@ -103,11 +103,14 @@ class ParticipantesController extends Controller
 		    }
 		    else 
 		    {
+
 		    	$this->redirect(Yii::app()->request->urlReferrer);
 		    	echo "No Registrado";
 		    	unset($_POST['Participantes']);    
 		    }
+
 		}  
+
 		$this->render('update',array(
 			'model'=>$model,
 		));

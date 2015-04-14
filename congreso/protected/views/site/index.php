@@ -893,7 +893,7 @@
                       <?php echo $form->labelEx($model,'email'); ?>
                       <?php echo $form->textField($model,'email',
                       array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'usuario@correo.com')); ?>
-                      <?php echo $form->error($model,'email'); ?>
+                      <?php echo $form->error($model,'email',array('class'=>'alert alert-danger')); ?>
                     </div>
                   </div>
 
@@ -903,7 +903,7 @@
                     <?php echo $form->labelEx($model,'contraseña'); ?>
                     <?php echo $form->passwordField($model,'contraseña',
                     array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Contraseña')); ?>
-                    <?php echo $form->error($model,'contraseña'); ?>
+                    <?php echo $form->error($model,'contraseña',array('class'=>'alert alert-danger')); ?>
                   </div>
                 </div>
                 <p align=right class="note">
@@ -951,7 +951,7 @@
                     <?php echo $form->labelEx($model,'nombres'); ?>
                     <?php echo $form->textField($model,'nombres',
                     array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Nombre(s)')); ?>
-                    <?php echo $form->error($model,'nombres'); ?>
+                    <?php echo $form->error($model,'nombres',array('class'=>'alert alert-danger')); ?>
                   </div>
                 </div>
 
@@ -961,7 +961,7 @@
                     <?php echo $form->labelEx($model,'apellidos'); ?>
                     <?php echo $form->textField($model,'apellidos',
                     array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Apellido(s)')); ?>
-                    <?php echo $form->error($model,'apellidos'); ?>
+                    <?php echo $form->error($model,'apellidos',array('class'=>'alert alert-danger')); ?>
                   </div>
                 </div>
 
@@ -971,7 +971,7 @@
                     <?php echo $form->labelEx($model,'email'); ?>
                     <?php echo $form->textField($model,'email',
                     array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'usuario@correo.com')); ?>
-                    <?php echo $form->error($model,'email'); ?>
+                    <?php echo $form->error($model,'email',array('class'=>'alert alert-danger')); ?>
                   </div>
                 </div>
 
@@ -981,7 +981,7 @@
                   <?php echo $form->labelEx($model,'contraseña'); ?>
                   <?php echo $form->passwordField($model,'contraseña',
                   array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Contraseña')); ?>
-                  <?php echo $form->error($model,'contraseña'); ?>
+                  <?php echo $form->error($model,'contraseña',array('class'=>'alert alert-danger')); ?>
                 </div>
               </div>
 
@@ -990,7 +990,7 @@
                   <?php echo $form->labelEx($model,'veri_contraseña'); ?>
                   <?php echo $form->passwordField($model,'veri_contraseña',
                   array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Contraseña')); ?>
-                  <?php echo $form->error($model,'veri_contraseña'); ?>           
+                  <?php echo $form->error($model,'veri_contraseña',array('class'=>'alert alert-danger')); ?>           
                 </div>
               </div>
             </fieldset>
