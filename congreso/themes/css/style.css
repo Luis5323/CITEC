@@ -52,19 +52,19 @@ h1.brand {
 
 
 
-#portfolioSection{background: url(../../img/wg.png); 
+#informacion{background: url(../../img/wg.png); 
     text-align: center;}
-#portfolioSection h1{ text-transform:uppercase; color:#000000; 
+#informacion h1{ text-transform:uppercase; color:#000000; 
     padding:0;font-size:60px;}
-#portfolioSection p {
+#informacion p {
     color: #000000;
     font-size: 19px;
     line-height: 27px;
 	margin: 15px 0;
 }
-#portfolioSection .span6, #contactSection .span6{ float:none; margin:0 auto; text-align:center;}
-#portfolioSection .thumbnails > li{margin-left: 60px; margin-bottom:60px;}
-#portfolioSection .thumbnails > li.span4{ width:350px;}
+#informacion .span6, #contactSection .span6{ float:none; margin:0 auto; text-align:center;}
+#informacion .thumbnails > li{margin-left: 60px; margin-bottom:60px;}
+#informacion .thumbnails > li.span4{ width:350px;}
 
 
 

@@ -39,6 +39,7 @@
     <!-- Color CSS Styles  -->
     <link rel="stylesheet" type="text/css" href="css/colors/green.css" title="green" media="screen" />
     
+<!-- <link id="callCss"rel="stylesheet" href="themes/css/style.css" type="text/css" media="screen" charset="utf-8" /> -->
 
     <!-- Margo JS  -->
     <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
