@@ -919,7 +919,7 @@
       </div>
       <div class="modal-footer">
         <button type="submit" class="btn btn-large btn-success">Entrar</button>
-        <button type="button" class="btn btn-large btn-danger" data-dismiss="modal">Cancelar</button>
+        <button type="reset" class="btn btn-large btn-danger" data-dismiss="modal">Cancelar</button>
         <?php $this->endWidget(); ?>
       </div>
     </div>
@@ -952,8 +952,8 @@
                     <?php echo $form->textField($model,'nombres',
                     array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Nombre(s)')); ?>
                     <?php echo $form->error($model,'nombres',array('class'=>'alert alert-danger')); ?>
-                  </div>
-                </div>
+                  </div
+>                </div>
 
                 <!--apellidos-->
                 <div class="form-group">
@@ -1010,7 +1010,7 @@
       </div>
       <div class="modal-footer">
         <button type="submit" class="btn btn-large btn-success">Registrar</button>
-        <button type="button" class="btn btn-large btn-danger" data-dismiss="modal">Cancelar</button>
+        <button type="reset" class="btn btn-large btn-danger" data-dismiss="modal">Cancelar</button>
         <?php $this->endWidget(); ?>
       </div>
     </div>
