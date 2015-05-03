@@ -151,7 +151,13 @@
                             </a>
                           </li>
                         <?php endforeach; ?>
+                         <?php if(Yii::app()->user->isGuest): ?>
+                        <li><a href="?r=site/login">Inicio de secion</a></li>
+                        <?php else: ?>
+                        <li><a href="?r=site/logout">Cerrar secion</a></li>
+                        <?php endif; ?>
                         </ul>
+
                         <!-- End Navigation List -->
                     </div>
                 </div>

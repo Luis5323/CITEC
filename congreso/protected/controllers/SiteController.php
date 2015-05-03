@@ -92,7 +92,7 @@ class SiteController extends Controller
 			array('label'=>'Especificaciones', 'url'=>"#especificaciones"),
 			array('label'=>'Ponentes', 'url'=>"#ponentes"),
 			array('label'=>'Registro', 'url'=>"#", 'attr'=>array("data-toggle"=>"modal", "data-target"=>"#modal_registro")),
-			array('label'=>'<i class="fa fa-user"></i>', 'url'=>"#", 'attr'=>array("data-toggle"=>"modal", "data-target"=>"#modal_sesion")),			
+			//array('label'=>'<i class="fa fa-user"></i>', 'url'=>"#", 'attr'=>array("data-toggle"=>"modal", "data-target"=>"#modal_sesion")),			
 		);
 
 
