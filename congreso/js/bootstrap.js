@@ -1223,6 +1223,7 @@ if (typeof jQuery === 'undefined') {
     Plugin.call($target, option, this)
   })
 
+
 }(jQuery);
 
 /* ========================================================================
@@ -2284,7 +2285,6 @@ if (typeof jQuery === 'undefined') {
     $.fn.affix = old
     return this
   }
-
 
   // AFFIX DATA-API
   // ==============
