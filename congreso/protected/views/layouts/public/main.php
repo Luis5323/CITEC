@@ -6,7 +6,7 @@
 <head>
 
     <!-- Basic -->
-    <title>CITEC | ITC</title>
+    <title><?php echo CHtml::encode($this->pageTitle); ?></title>
 
     <!-- Define Charset -->
     <meta charset="utf-8">
@@ -62,6 +62,12 @@
     <!--[if IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="sesion_tooltip"]').tooltip();
+            $('[data-toggle="tooltip"]').tooltip(); 
+        });
+    </script>
 </head>
 
 <body>
@@ -143,20 +149,32 @@
                                     }
                                 }
                             ?>
-                          <li>
-                            <a href="<?php echo $value['url']; ?>" <?php echo $attr; ?>>
-                                <?php 
-                                    $attr = "";
-                                    echo $value['label']; ?>
-                            </a>
-                          </li>
-                        <?php endforeach; ?>
-                         <?php if(Yii::app()->user->isGuest): ?>
-                        <li><a href="?r=site/login">Inicio de secion</a></li>
-                        <?php else: ?>
-                        <li><a href="?r=site/logout">Cerrar secion</a></li>
-                        <li><a href="?r=eventos/admin">Panel Administrativo</a></li>
-                        <?php endif; ?>
+                            <li>
+                                <a href="<?php echo $value['url']; ?>" <?php echo $attr; ?>>
+                                    <?php 
+                                        $attr = "";
+                                        echo $value['label']; ?>
+                                </a>
+                            </li>
+                            <?php endforeach; ?>
+                            <?php if(Yii::app()->user->isGuest): ?>
+                            <li>
+                                <a href="?r=site/login" data-toggle="tooltip" data-placement="right" title="Iniciar Sesión">
+                                    <i class="fa fa-user"></i>
+                                </a>
+                            </li>
+                            <?php else: ?>
+                            <li>
+                                <a href="?r=site/logout" data-toggle="tooltip" data-placement="right" title="Cerrar Sesión">
+                                    <i class="fa fa-sign-out"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="?r=eventos/admin" data-toggle="tooltip" data-placement="right" title="Panel Administrativo">
+                                    <i class="fa fa-bars"></i>
+                                </a>
+                            </li>
+                            <?php endif; ?>
                         </ul>
 
                         <!-- End Navigation List -->

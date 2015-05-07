@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,6 +16,11 @@
 
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
+  <!--<title>CITEC | ITC</title>-->
+  
+  <!-- favicon -->
+  <link href="images/itc.png" rel="icon" type="image/x-icon" />
+
 </head>
 
 <body>
