@@ -159,10 +159,13 @@
                             <?php endforeach; ?>
                             <?php if(Yii::app()->user->isGuest): ?>
                             <li>
+                                <a href="" data-toggle="modal" data-target="#modal_registro">Registro</a>
+                            </li>
+                            <li>
                                 <a href="?r=site/login" data-toggle="tooltip" data-placement="right" title="Iniciar Sesión">
                                     <i class="fa fa-user"></i>
                                 </a>
-                            </li>
+                            </li>           
                             <?php else: ?>
                             <li>
                                 <a href="?r=site/logout" data-toggle="tooltip" data-placement="right" title="Cerrar Sesión">
