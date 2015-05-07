@@ -132,11 +132,9 @@
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="myModalLabel">Mapa del Evento</h4>
-        <h3><a href="https://goo.gl/maps/RxYWO" target="mapa">Ir a ITC Campus 2, Ahora!!</a></h3>
       </div>
-
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7472.337284447405!2d-100.8128702!3d20.5402797!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842cbabd68688f33%3A0xf62987cd7c560734!2sInstituto+Tecnologico+de+Celaya!5e0!3m2!1ses-419!2smx!4v1430696634732" width="100%" height="450" frameborder="0" style="border:0"></iframe>
-     
+      <div class="modal-body">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.138410769463!2d-100.81251999999999!3d20.541517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842cbabd3c2cd0ab%3A0x655a93bfa763b7ce!2sTecnologico+de+celaya+Campus+2!5e0!3m2!1ses!2s!4v1428204840987" width="100%" height="450" frameborder="0" style="border:0"></iframe>
       </div>
     <div class="modal-footer">
       <button type="button" class="btn btn-primary btn-lg" data-dismiss="modal">Cerrar</button>
@@ -144,7 +142,6 @@
   </div>
 </div>
 </div>
-
 
 <!-- Modal Evento -->
 <div class="modal fade" id="modal_cuando" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -1019,6 +1016,3 @@
     </div>
   </div>
 </div>
-
-
-

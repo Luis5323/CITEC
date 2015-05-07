@@ -25,7 +25,7 @@ $this->menu=array(
 		'nombre',
 		'logotipo',
 		'convocatoria',
-		'costo',
+		
 		'fecha_inicio',
 		'fecha_fin',
 		'lugar',

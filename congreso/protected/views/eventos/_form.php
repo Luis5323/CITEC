@@ -37,11 +37,7 @@
 		<?php echo $form->error($model,'convocatoria'); ?>
 	</div>
 
-	<div class="form-group">
-		<?php echo $form->labelEx($model,'costo'); ?>
-		<?php echo $form->textArea($model,'costo',array('rows'=>6, 'cols'=>50,'class'=>'form-control')); ?>
-		<?php echo $form->error($model,'costo'); ?>
-	</div>
+	
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'fecha_inicio'); ?>
