@@ -21,9 +21,7 @@
 	<?php echo CHtml::encode($data->convocatoria); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('costo')); ?>:</b>
-	<?php echo CHtml::encode($data->costo); ?>
-	<br />
+	
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('fecha_inicio')); ?>:</b>
 	<?php echo CHtml::encode($data->fecha_inicio); ?>

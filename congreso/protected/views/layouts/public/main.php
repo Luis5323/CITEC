@@ -155,6 +155,7 @@
                         <li><a href="?r=site/login">Inicio de secion</a></li>
                         <?php else: ?>
                         <li><a href="?r=site/logout">Cerrar secion</a></li>
+                        <li><a href="?r=eventos/admin">Panel Administrativo</a></li>
                         <?php endif; ?>
                         </ul>
 

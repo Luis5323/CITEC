@@ -31,10 +31,7 @@
 		<?php echo $form->textField($model,'convocatoria',array('size'=>60,'maxlength'=>250,'class'=>'form-control')); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'costo'); ?>
-		<?php echo $form->textArea($model,'costo',array('rows'=>6, 'cols'=>50,'class'=>'form-control')); ?>
-	</div>
+	
 
 	<div class="row">
 		<?php echo $form->label($model,'fecha_inicio'); ?>

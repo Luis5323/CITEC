@@ -1476,3 +1476,257 @@ Stack trace:
 REQUEST_URI=/topicosweb/congreso/index.php?r=site/login
 HTTP_REFERER=http://localhost:8080/topicosweb/congreso/index.php?r=site/login
 ---
+2015/05/07 02:53:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "evento/admin"' in C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('evento/admin')
+#1 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\topicosweb\congreso999\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/topicosweb/congreso999/index.php?r=evento/admin
+HTTP_REFERER=http://localhost:8080/topicosweb/congreso999/index.php
+---
+2015/05/07 02:54:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'No es posible resolver la solicitud "evento/admin"' in C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('evento/admin')
+#1 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\topicosweb\congreso999\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/topicosweb/congreso999/index.php?r=evento/admin
+HTTP_REFERER=http://localhost:8080/topicosweb/congreso999/index.php
+---
+2015/05/07 02:54:16 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\xampp\htdocs\topicosweb\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'Usted no se enc...')
+#1 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('eventos/admin')
+#9 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\topicosweb\congreso999\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/topicosweb/congreso999/index.php?r=eventos/admin
+HTTP_REFERER=http://localhost:8080/topicosweb/congreso999/index.php
+---
+2015/05/07 02:54:43 [error] [exception.CException] exception 'CException' with message 'La propiedad "Eventos"."costo" no se encuentra definida.' in C:\xampp\htdocs\topicosweb\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\db\ar\CActiveRecord.php(145): CComponent->__get('costo')
+#1 C:\xampp\htdocs\topicosweb\framework\web\helpers\CHtml.php(2728): CActiveRecord->__get('costo')
+#2 C:\xampp\htdocs\topicosweb\framework\web\helpers\CHtml.php(1833): CHtml::resolveValue(Object(Eventos), 'costo')
+#3 C:\xampp\htdocs\topicosweb\framework\web\widgets\CActiveForm.php(853): CHtml::activeTextArea(Object(Eventos), 'costo', Array)
+#4 C:\xampp\htdocs\topicosweb\congreso999\protected\views\eventos\_search.php(36): CActiveForm->textArea(Object(Eventos), 'costo', Array)
+#5 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\topicosweb\congreso999\protected\views\eventos\admin.php(40): CController->renderPartial('_search', Array)
+#9 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#11 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\topicosweb\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#13 C:\xampp\htdocs\topicosweb\congreso999\protected\controllers\EventosController.php(143): CController->render('admin', Array)
+#14 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): EventosController->actionAdmin()
+#15 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#18 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#22 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('admin')
+#24 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('eventos/admin')
+#25 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#26 C:\xampp\htdocs\topicosweb\congreso999\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/topicosweb/congreso999/index.php?r=eventos/admin
+HTTP_REFERER=http://localhost:8080/topicosweb/congreso999/index.php
+---
+2015/05/07 02:58:08 [error] [exception.CException] exception 'CException' with message 'La propiedad "Eventos"."costo" no se encuentra definida.' in C:\xampp\htdocs\topicosweb\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\db\ar\CActiveRecord.php(145): CComponent->__get('costo')
+#1 C:\xampp\htdocs\topicosweb\framework\web\helpers\CHtml.php(2728): CActiveRecord->__get('costo')
+#2 C:\xampp\htdocs\topicosweb\framework\web\helpers\CHtml.php(1833): CHtml::resolveValue(Object(Eventos), 'costo')
+#3 C:\xampp\htdocs\topicosweb\framework\web\widgets\CActiveForm.php(853): CHtml::activeTextArea(Object(Eventos), 'costo', Array)
+#4 C:\xampp\htdocs\topicosweb\congreso999\protected\views\eventos\_search.php(36): CActiveForm->textArea(Object(Eventos), 'costo', Array)
+#5 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\topicosweb\congreso999\protected\views\eventos\admin.php(40): CController->renderPartial('_search', Array)
+#9 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#11 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\topicosweb\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#13 C:\xampp\htdocs\topicosweb\congreso999\protected\controllers\EventosController.php(143): CController->render('admin', Array)
+#14 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): EventosController->actionAdmin()
+#15 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#18 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#22 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('admin')
+#24 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('eventos/admin')
+#25 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#26 C:\xampp\htdocs\topicosweb\congreso999\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/topicosweb/congreso999/index.php?r=eventos/admin
+HTTP_REFERER=http://localhost:8080/topicosweb/congreso999/index.php
+---
+2015/05/07 02:59:10 [error] [exception.CException] exception 'CException' with message 'La propiedad "Eventos"."costo" no se encuentra definida.' in C:\xampp\htdocs\topicosweb\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\db\ar\CActiveRecord.php(145): CComponent->__get('costo')
+#1 C:\xampp\htdocs\topicosweb\framework\web\helpers\CHtml.php(2728): CActiveRecord->__get('costo')
+#2 C:\xampp\htdocs\topicosweb\framework\web\helpers\CHtml.php(1833): CHtml::resolveValue(Object(Eventos), 'costo')
+#3 C:\xampp\htdocs\topicosweb\framework\web\widgets\CActiveForm.php(853): CHtml::activeTextArea(Object(Eventos), 'costo', Array)
+#4 C:\xampp\htdocs\topicosweb\congreso999\protected\views\eventos\_search.php(36): CActiveForm->textArea(Object(Eventos), 'costo', Array)
+#5 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\topicosweb\congreso999\protected\views\eventos\admin.php(40): CController->renderPartial('_search', Array)
+#9 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#11 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\topicosweb\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#13 C:\xampp\htdocs\topicosweb\congreso999\protected\controllers\EventosController.php(143): CController->render('admin', Array)
+#14 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): EventosController->actionAdmin()
+#15 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#18 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#22 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('admin')
+#24 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('eventos/admin')
+#25 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#26 C:\xampp\htdocs\topicosweb\congreso999\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/topicosweb/congreso999/?r=eventos/admin
+HTTP_REFERER=http://localhost:8080/topicosweb/congreso999/
+---
+2015/05/07 03:02:53 [error] [exception.CException] exception 'CException' with message 'La propiedad "Eventos"."costo" no se encuentra definida.' in C:\xampp\htdocs\topicosweb\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\db\ar\CActiveRecord.php(145): CComponent->__get('costo')
+#1 C:\xampp\htdocs\topicosweb\framework\web\helpers\CHtml.php(2728): CActiveRecord->__get('costo')
+#2 C:\xampp\htdocs\topicosweb\framework\web\helpers\CHtml.php(1833): CHtml::resolveValue(Object(Eventos), 'costo')
+#3 C:\xampp\htdocs\topicosweb\framework\web\widgets\CActiveForm.php(853): CHtml::activeTextArea(Object(Eventos), 'costo', Array)
+#4 C:\xampp\htdocs\topicosweb\congreso999\protected\views\eventos\_search.php(36): CActiveForm->textArea(Object(Eventos), 'costo', Array)
+#5 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\topicosweb\congreso999\protected\views\eventos\admin.php(40): CController->renderPartial('_search', Array)
+#9 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#11 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\topicosweb\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#13 C:\xampp\htdocs\topicosweb\congreso999\protected\controllers\EventosController.php(143): CController->render('admin', Array)
+#14 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): EventosController->actionAdmin()
+#15 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#18 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#22 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('admin')
+#24 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('eventos/admin')
+#25 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#26 C:\xampp\htdocs\topicosweb\congreso999\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/topicosweb/congreso999/?r=eventos/admin
+HTTP_REFERER=http://localhost:8080/topicosweb/congreso999/
+---
+2015/05/07 03:03:21 [error] [exception.CException] exception 'CException' with message 'La propiedad "Eventos"."costo" no se encuentra definida.' in C:\xampp\htdocs\topicosweb\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\db\ar\CActiveRecord.php(145): CComponent->__get('costo')
+#1 C:\xampp\htdocs\topicosweb\framework\web\helpers\CHtml.php(2728): CActiveRecord->__get('costo')
+#2 C:\xampp\htdocs\topicosweb\framework\web\helpers\CHtml.php(1833): CHtml::resolveValue(Object(Eventos), 'costo')
+#3 C:\xampp\htdocs\topicosweb\framework\web\widgets\CActiveForm.php(853): CHtml::activeTextArea(Object(Eventos), 'costo', Array)
+#4 C:\xampp\htdocs\topicosweb\congreso999\protected\views\eventos\_search.php(36): CActiveForm->textArea(Object(Eventos), 'costo', Array)
+#5 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\topicosweb\congreso999\protected\views\eventos\admin.php(40): CController->renderPartial('_search', Array)
+#9 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#11 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\topicosweb\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#13 C:\xampp\htdocs\topicosweb\congreso999\protected\controllers\EventosController.php(143): CController->render('admin', Array)
+#14 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): EventosController->actionAdmin()
+#15 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#18 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#22 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('admin')
+#24 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('eventos/admin')
+#25 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#26 C:\xampp\htdocs\topicosweb\congreso999\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/topicosweb/congreso999/?r=eventos/admin
+HTTP_REFERER=http://localhost:8080/topicosweb/congreso999/
+---
+2015/05/07 03:05:08 [error] [exception.CException] exception 'CException' with message 'La propiedad "Eventos"."costo" no se encuentra definida.' in C:\xampp\htdocs\topicosweb\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\db\ar\CActiveRecord.php(145): CComponent->__get('costo')
+#1 C:\xampp\htdocs\topicosweb\congreso999\protected\models\Eventos.php(102): CActiveRecord->__get('costo')
+#2 C:\xampp\htdocs\topicosweb\congreso999\protected\views\eventos\admin.php(45): Eventos->search()
+#3 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\topicosweb\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#7 C:\xampp\htdocs\topicosweb\congreso999\protected\controllers\EventosController.php(143): CController->render('admin', Array)
+#8 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): EventosController->actionAdmin()
+#9 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('admin')
+#18 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('eventos/admin')
+#19 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\topicosweb\congreso999\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/topicosweb/congreso999/?r=eventos/admin
+HTTP_REFERER=http://localhost:8080/topicosweb/congreso999/
+---
+2015/05/07 03:05:45 [error] [exception.CException] exception 'CException' with message 'La propiedad "Eventos"."costo" no se encuentra definida.' in C:\xampp\htdocs\topicosweb\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\db\ar\CActiveRecord.php(145): CComponent->__get('costo')
+#1 C:\xampp\htdocs\topicosweb\congreso999\protected\models\Eventos.php(102): CActiveRecord->__get('costo')
+#2 C:\xampp\htdocs\topicosweb\congreso999\protected\views\eventos\admin.php(45): Eventos->search()
+#3 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\topicosweb\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#7 C:\xampp\htdocs\topicosweb\congreso999\protected\controllers\EventosController.php(143): CController->render('admin', Array)
+#8 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): EventosController->actionAdmin()
+#9 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('admin')
+#18 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('eventos/admin')
+#19 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\topicosweb\congreso999\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/topicosweb/congreso999/?r=eventos/admin
+HTTP_REFERER=http://localhost:8080/topicosweb/congreso999/
+---
