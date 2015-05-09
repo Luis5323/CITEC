@@ -2410,3 +2410,19 @@ Stack trace:
 #16 {main}
 REQUEST_URI=/CITEC/congreso/
 ---
+2015/05/09 18:12:31 [error] [php] Undefined variable: model (C:\xampp\htdocs\CITEC\congreso\protected\controllers\EventosController.php:147)
+Stack trace:
+#0 C:\xampp\htdocs\CITEC\framework\web\filters\CFilterChain.php(133): EventosController->runAction()
+#1 C:\xampp\htdocs\CITEC\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\CITEC\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\CITEC\framework\web\filters\CInlineFilter.php(58): EventosController->filterAccessControl()
+#4 C:\xampp\htdocs\CITEC\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\CITEC\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\CITEC\framework\web\CController.php(265): EventosController->runActionWithFilters()
+#7 C:\xampp\htdocs\CITEC\framework\web\CWebApplication.php(282): EventosController->run()
+#8 C:\xampp\htdocs\CITEC\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\CITEC\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\CITEC\congreso\index.php(13): CWebApplication->run()
+REQUEST_URI=/CITEC/congreso/index.php?r=eventos/admin
+in C:\xampp\htdocs\CITEC\congreso\protected\controllers\EventosController.php (147)
+in C:\xampp\htdocs\CITEC\congreso\index.php (13)

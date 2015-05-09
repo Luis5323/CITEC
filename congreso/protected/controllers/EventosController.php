@@ -133,12 +133,17 @@ class EventosController extends Controller
 	 */
 	public function actionAdmin()
 	{
+		//vista de Crear
+
+
+		//vista de Admin
 		$model=new Eventos('search');
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Eventos']))
 			$model->attributes=$_GET['Eventos'];
 
 		$this->render('admin',array(
+			//'modelGrid'=>$modelGrid,
 			'model'=>$model,
 		));
 	}
