@@ -2426,3 +2426,66 @@ Stack trace:
 REQUEST_URI=/CITEC/congreso/index.php?r=eventos/admin
 in C:\xampp\htdocs\CITEC\congreso\protected\controllers\EventosController.php (147)
 in C:\xampp\htdocs\CITEC\congreso\index.php (13)
+2015/05/09 18:21:33 [error] [system.db.CDbCommand] CDbCommand::fetchAll() falló: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'citec.usuarios' doesn't exist. La sentencia SQL ejecutada fue: SHOW FULL COLUMNS FROM `usuarios`.
+in C:\xampp\htdocs\CITEC\congreso\protected\controllers\UsuariosController.php (136)
+in C:\xampp\htdocs\CITEC\congreso\index.php (13)
+2015/05/09 18:21:33 [error] [exception.CDbException] exception 'CDbException' with message 'La tabla "usuarios" definida en la clase active record "Usuarios" no se ha podido encontrar en la base de datos.' in C:\xampp\htdocs\CITEC\framework\db\ar\CActiveRecord.php:2385
+Stack trace:
+#0 C:\xampp\htdocs\CITEC\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Usuarios))
+#1 C:\xampp\htdocs\CITEC\framework\db\ar\CActiveRecord.php(79): CActiveRecord->getMetaData()
+#2 C:\xampp\htdocs\CITEC\congreso\protected\controllers\UsuariosController.php(136): CActiveRecord->__construct('search')
+#3 C:\xampp\htdocs\CITEC\framework\web\actions\CInlineAction.php(49): UsuariosController->actionAdmin()
+#4 C:\xampp\htdocs\CITEC\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\CITEC\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\CITEC\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\CITEC\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\CITEC\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\CITEC\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\CITEC\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\CITEC\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\CITEC\framework\web\CWebApplication.php(282): CController->run('admin')
+#13 C:\xampp\htdocs\CITEC\framework\web\CWebApplication.php(141): CWebApplication->runController('usuarios/admin')
+#14 C:\xampp\htdocs\CITEC\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\CITEC\congreso\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/CITEC/congreso/index.php?r=usuarios/admin
+HTTP_REFERER=http://localhost/CITEC/congreso/index.php?r=actividades/admin
+---
+2015/05/09 18:29:25 [error] [php] Undefined variable: modelGrid (C:\xampp\htdocs\CITEC\congreso\protected\views\participantes\admin.php:34)
+Stack trace:
+#0 C:\xampp\htdocs\CITEC\framework\web\CController.php(869): ParticipantesController->renderFile()
+#1 C:\xampp\htdocs\CITEC\framework\web\CController.php(782): ParticipantesController->renderPartial()
+#2 C:\xampp\htdocs\CITEC\congreso\protected\controllers\ParticipantesController.php(169): ParticipantesController->render()
+#3 C:\xampp\htdocs\CITEC\framework\web\actions\CInlineAction.php(49): ParticipantesController->actionAdmin()
+#4 C:\xampp\htdocs\CITEC\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\CITEC\framework\web\filters\CFilterChain.php(133): ParticipantesController->runAction()
+#6 C:\xampp\htdocs\CITEC\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\CITEC\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\CITEC\framework\web\filters\CInlineFilter.php(58): ParticipantesController->filterAccessControl()
+#9 C:\xampp\htdocs\CITEC\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\xampp\htdocs\CITEC\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\CITEC\framework\web\CController.php(265): ParticipantesController->runActionWithFilters()
+#12 C:\xampp\htdocs\CITEC\framework\web\CWebApplication.php(282): ParticipantesController->run()
+#13 C:\xampp\htdocs\CITEC\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\CITEC\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\CITEC\congreso\index.php(13): CWebApplication->run()
+REQUEST_URI=/CITEC/congreso/index.php?r=participantes/admin
+in C:\xampp\htdocs\CITEC\congreso\protected\views\participantes\admin.php (34)
+in C:\xampp\htdocs\CITEC\congreso\protected\controllers\ParticipantesController.php (169)
+in C:\xampp\htdocs\CITEC\congreso\index.php (13)
+2015/05/09 18:35:47 [error] [php] Undefined variable: modelGrid (C:\xampp\htdocs\CITEC\congreso\protected\controllers\EventosController.php:155)
+Stack trace:
+#0 C:\xampp\htdocs\CITEC\framework\web\filters\CFilterChain.php(133): EventosController->runAction()
+#1 C:\xampp\htdocs\CITEC\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\CITEC\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\CITEC\framework\web\filters\CInlineFilter.php(58): EventosController->filterAccessControl()
+#4 C:\xampp\htdocs\CITEC\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\CITEC\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\CITEC\framework\web\CController.php(265): EventosController->runActionWithFilters()
+#7 C:\xampp\htdocs\CITEC\framework\web\CWebApplication.php(282): EventosController->run()
+#8 C:\xampp\htdocs\CITEC\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\CITEC\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\CITEC\congreso\index.php(13): CWebApplication->run()
+REQUEST_URI=/CITEC/congreso/index.php?r=eventos/admin
+in C:\xampp\htdocs\CITEC\congreso\protected\controllers\EventosController.php (155)
+in C:\xampp\htdocs\CITEC\congreso\index.php (13)

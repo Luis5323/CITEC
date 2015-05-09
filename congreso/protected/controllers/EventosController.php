@@ -134,16 +134,25 @@ class EventosController extends Controller
 	public function actionAdmin()
 	{
 		//vista de Crear
+		$model=new Eventos;
 
+		// Uncomment the following line if AJAX validation is needed
+		// $this->performAjaxValidation($model);
+
+		if(isset($_POST['Eventos']))
+		{
+			$model->attributes=$_POST['Eventos'];
+		$model->save();		
+		}
 
 		//vista de Admin
-		$model=new Eventos('search');
-		$model->unsetAttributes();  // clear any default values
+		$modelGrid=new Eventos('search');
+		$modelGrid->unsetAttributes();  // clear any default values
 		if(isset($_GET['Eventos']))
-			$model->attributes=$_GET['Eventos'];
+			$modelGrid->attributes=$_GET['Eventos'];
 
 		$this->render('admin',array(
-			//'modelGrid'=>$modelGrid,
+			'modelGrid'=>$modelGrid,
 			'model'=>$model,
 		));
 	}

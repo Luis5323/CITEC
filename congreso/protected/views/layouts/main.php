@@ -72,7 +72,7 @@
             <li><a href="?r=eventos/admin">Eventos</a></li>
             <li><a href="?r=participantes/admin">Participantes</a></li>
             <li><a href="?r=actividades/admin">Actividades</a></li>
-            <li><a href="?r=usuarios/admin">Usuarios</a></li>
+            <!-- <li><a href="?r=usuarios/admin">Usuarios</a></li> -->
           </ul>
          
         </div>

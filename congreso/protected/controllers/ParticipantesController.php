@@ -145,12 +145,26 @@ class ParticipantesController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new Participantes('search');
-		$model->unsetAttributes();  // clear any default values
+		//vista de Create
+		$model=new Participantes;
+
+		// Uncomment the following line if AJAX validation is needed
+		// $this->performAjaxValidation($model);
+
+		if(isset($_POST['Participantes']))
+		{
+			$model->attributes=$_POST['Participantes'];
+		$model->save();
+	}
+
+		//vista de Admin
+		$modelGrid=new Participantes('search');
+		$modelGrid->unsetAttributes();  // clear any default values
 		if(isset($_GET['Participantes']))
-			$model->attributes=$_GET['Participantes'];
+			$modelGrid->attributes=$_GET['Participantes'];
 
 		$this->render('admin',array(
+			'modelGrid'=>$modelGrid,
 			'model'=>$model,
 		));
 	}

@@ -133,12 +133,26 @@ class ActividadesController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new Actividades('search');
-		$model->unsetAttributes();  // clear any default values
+		//vista de crear
+		$model=new Actividades;
+
+		// Uncomment the following line if AJAX validation is needed
+		// $this->performAjaxValidation($model);
+
+		if(isset($_POST['Actividades']))
+		{
+			$model->attributes=$_POST['Actividades'];
+		$model->save();
+		}
+
+		//vista de Admin
+		$modelGrid=new Actividades('search');
+		$modelGrid->unsetAttributes();  // clear any default values
 		if(isset($_GET['Actividades']))
-			$model->attributes=$_GET['Actividades'];
+			$modelGrid->attributes=$_GET['Actividades'];
 
 		$this->render('admin',array(
+			'modelGrid'=>$modelGrid,
 			'model'=>$model,
 		));
 	}

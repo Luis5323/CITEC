@@ -29,8 +29,8 @@ $('.search-form form').submit(function(){
 <div class="col-md-6">
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'actividades-grid',
-	'dataProvider'=>$model->search(),
-	'filter'=>$model,
+	'dataProvider'=>$modelGrid->search(),
+	'filter'=>$modelGrid,
 	'columns'=>array(
 		'id_actividad',
 		'id_tipo',
