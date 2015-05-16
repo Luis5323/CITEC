@@ -92,7 +92,7 @@
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'id_participante',array('style'=>'display: none;')); ?>
-		<?php echo $form->textField($model,'id_participante',array('class'=>'form-control','style'=>'display: none;')); ?>
+		<?php echo $form->textField($model,'id_participante',array('class'=>'form-control','value'=>Yii::app()->user->id,'style'=>'display: none;')); ?>
 		<?php echo $form->error($model,'id_participante'); ?>
 	</div>
 
