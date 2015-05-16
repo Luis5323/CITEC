@@ -134,6 +134,12 @@ class ParticipantesController extends Controller
 	 */
 	public function actionIndex()
 	{
+        #Yii::app()->authManager->createRole("admin");
+		#Yii::app()->authManager->assign("admin",1);
+		#echo Yii::app()->user->nombre;
+		#if(Yii::app()->user->checkAccess("admin"))
+		#	echo "hola";
+
 		$dataProvider=new CActiveDataProvider('Participantes');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
@@ -145,6 +151,7 @@ class ParticipantesController extends Controller
 	 */
 	public function actionAdmin()
 	{
+
 		//vista de Create
 		$model=new Participantes;
 

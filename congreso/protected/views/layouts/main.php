@@ -50,14 +50,19 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
+           <?php if(Yii::app()->user->isGuest): ?>
           <a class="navbar-brand" href="index.php?r=site/login">CITEC</a>
+           <?php else: ?>
+             <a class="navbar-brand" href="">Bienvenido: <?php echo Yii::app()->user->nombre; echo'    ';echo Yii::app()->user->apellido ?></a>
+             <a href="?r=site/logout" >Cerrar Secion</a>
+          <?php endif; ?>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <!--<li><a href="#">Dashboard</a></li>-->
            
           </ul>
-          <form class="navbar-form navbar-right">
+          <form class="navbar-form navbar-right"> 
             <input type="text" class="form-control" placeholder="Search...">
           </form>
         </div>
@@ -69,9 +74,31 @@
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
             <li class="active"><a href="?r=/site/index">Inicio <span class="sr-only">(current)</span></a></li>
-            <li><a href="?r=eventos/admin">Eventos</a></li>
+           
+
+            <?php if(Yii::app()->user->checkAccess("admin"))
+            {?>
+             <li><a href="?r=eventos/admin">Eventos</a></li>
             <li><a href="?r=participantes/admin">Participantes</a></li>
             <li><a href="?r=actividades/admin">Actividades</a></li>
+            <li><a href="?r=articulos/admin">Articulos</a></li>
+            <?php }?>
+
+               <?php if(Yii::app()->user->checkAccess("congresista"))
+            {?>
+           
+            <li><a href="?r=actividades/index">Actividades</a></li>
+           
+            
+            <?php }?>
+
+               <?php if(Yii::app()->user->checkAccess("ponente"))
+            {?>
+
+            <li><a href="?r=articulos/create">Articulos</a></li>
+           
+            
+            <?php }?>
             <!-- <li><a href="?r=usuarios/admin">Usuarios</a></li> -->
           </ul>
          

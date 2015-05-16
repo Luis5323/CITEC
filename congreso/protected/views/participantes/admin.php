@@ -29,6 +29,7 @@ $('.search-form form').submit(function(){
 <h1>Administrar Participantes</h1>
 
 <div class="col-md-6">
+
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'participantes-grid',
 	'dataProvider'=>$modelGrid->search(),

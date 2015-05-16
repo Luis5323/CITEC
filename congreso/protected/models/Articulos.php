@@ -19,7 +19,7 @@
  */
 class Articulos extends CActiveRecord
 {
-	/**
+	/*
 	 * @return string the associated database table name
 	 */
 	public function tableName()
@@ -38,8 +38,8 @@ class Articulos extends CActiveRecord
 			array('id_participante, id_evento', 'required'),
 			array('id_participante, id_evento, aceptado', 'numerical', 'integerOnly'=>true),
 			array('titulo', 'length', 'max'=>500),
-			array('articulo_pdf', 'length', 'max'=>250),
 			array('resumen, resultado', 'safe'),
+			array('articulo_pdf', 'length', 'max'=>250),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id_articulo, id_participante, id_evento, titulo, resumen, articulo_pdf, aceptado, resultado', 'safe', 'on'=>'search'),

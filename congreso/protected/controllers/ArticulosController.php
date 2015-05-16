@@ -37,7 +37,8 @@ class ArticulosController extends Controller
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
+				#'users'=>array('admin'),
+				'roles'=>array('admin'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -70,6 +71,7 @@ class ArticulosController extends Controller
 		if(isset($_POST['Articulos']))
 		{
 			$model->attributes=$_POST['Articulos'];
+
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id_articulo));
 		}
@@ -122,6 +124,9 @@ class ArticulosController extends Controller
 	 */
 	public function actionIndex()
 	{
+		#Yii::app()->authManager->createRole("ponente");
+		#Yii::app()->authManager->assign("ponente",11);
+
 		$dataProvider=new CActiveDataProvider('Articulos');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
@@ -134,6 +139,7 @@ class ArticulosController extends Controller
 	public function actionAdmin()
 	{
 		$model=new Articulos('search');
+		
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Articulos']))
 			$model->attributes=$_GET['Articulos'];
