@@ -221,66 +221,71 @@
 
     <!-- Some Text -->
     <p class="text-center">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-
       <!-- Divider -->
       <div class="hr1" style="margin-bottom:15px;"></div>
       <center>
       <!-- Start Recent Projects Carousel -->
       <!-- Start Recent Projects Carousel -->
+
       <ul id="portfolio-list" data-animated="fadeIn">
         <li>
-          <img src="images/Portfolio/comida.jpg" alt="" />
+          <img src="images/Portfolio/comida.jpg"/>
           <div class="portfolio-item-content">
-            <span class="header">Tracidicional comida de Sistemas</span>
-            <p class="body">web develpment, design</p>
+            <span class="header">Tradicional Comida</span>
+            <p class="body">Sistemas y Computacion</p>
           </div>
-          <a href="#"><i class="more">+</i></a>
-
+          <a href="#" >
+            <i class="more" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Some content">+</i>
+          </a>
         </li>
         <li>
-          <img src="images/Portfolio/2.png" alt="" />
+          <img src="images/Portfolio/musica.jpg" alt="" />
           <div class="portfolio-item-content">
             <span class="header">Quarterly Musashino</span>
             <p class="body">web develpment, design</p>
           </div>
-          <a href="#"><i class="more">+</i></a>
-
-        </li>
+          <a href="#" >
+            <i class="more" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Some content">+</i>
+          </a>        </li>
         <li>
-          <img src="images/Portfolio/3.png" alt="" />
+          <img src="images/Portfolio/tecnologia.jpg" alt="" />
           <div class="portfolio-item-content">
             <span class="header">Mainichi April 2014</span>
             <p class="body">web develpment, design</p>
           </div>
-          <a href="#"><i class="more">+</i></a>
-
+          <a href="#" >
+            <i class="more" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Some content">+</i>
+          </a>
         </li>
         <li>
-          <img src="images/Portfolio/4.png" alt="" />
+          <img src="images/Portfolio/google_glass.jpg" alt="" />
           <div class="portfolio-item-content">
             <span class="header">Shitamachi Rocket</span>
             <p class="body">web develpment, design</p>
           </div>
-          <a href="#"><i class="more">+</i></a>
-
+          <a href="#" >
+            <i class="more" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Some content">+</i>
+          </a>
         </li>
         <li>
-          <img src="images/Portfolio/5.png" alt="" />
+          <img src="images/Portfolio/wifi.jpg" alt="" />
           <div class="portfolio-item-content">
             <span class="header">Majesty express vol. 01</span>
             <p class="body">web develpment, design</p>
           </div>
-          <a href="#"><i class="more">+</i></a>
-
+          <a href="#" >
+            <i class="more" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Some content">+</i>
+          </a>
         </li>
         <li>
-          <img src="images/Portfolio/6.png" alt="" />
+          <img src="images/Portfolio/fingerprint.jpg" alt="" />
           <div class="portfolio-item-content">
             <span class="header">Monocle issue 69</span>
             <p class="body">web develpment, design</p>
           </div>
-          <a href="#"><i class="more">+</i></a>
-
+          <a href="#" >
+            <i class="more" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Some content">+</i>
+          </a>
         </li>
       </ul>
       <!-- End Recent Projects Carousel -->
@@ -863,7 +868,7 @@
 
 <!-- Go To Top Link -->
 <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
-
+P
 <div id="loader">
   <div class="spinner">
     <div class="dot1"></div>

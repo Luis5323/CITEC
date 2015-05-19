@@ -7,8 +7,8 @@ return array(
 	
 	'connectionString' => 'mysql:host=localhost;dbname=citec', //citec, equipo2
 	'emulatePrepare' => true,
-	'username' => 'revista',  //root, equipo2
-	'password' => 'revista',  //'', yty36yt
+	'username' => 'root',  //root, equipo2
+	'password' => '',  //'', yty36yt
 	'charset' => 'utf8',
 	
 );

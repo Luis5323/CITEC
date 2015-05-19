@@ -54,7 +54,7 @@
           <a class="navbar-brand" href="index.php?r=site/login">CITEC</a>
            <?php else: ?>
              <a class="navbar-brand" href="">Bienvenido: <?php echo Yii::app()->user->nombre; echo'    ';echo Yii::app()->user->apellido ?></a>
-             <a href="?r=site/logout" >Cerrar Secion</a>
+             <a href="?r=site/logout" >Cerrar Sesi&oacute;n</a>
           <?php endif; ?>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
