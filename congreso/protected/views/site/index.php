@@ -873,7 +873,6 @@
 
 <!-- Go To Top Link -->
 <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
-P
 <div id="loader">
   <div class="spinner">
     <div class="dot1"></div>
@@ -966,8 +965,8 @@ P
                     <?php echo $form->textField($model,'nombres',
                     array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Nombre(s)')); ?>
                     <?php echo $form->error($model,'nombres',array('class'=>'alert alert-danger')); ?>
-                  </div
->                </div>
+                  </div> 
+                </div>
 
                 <!--apellidos-->
                 <div class="form-group">
@@ -1030,4 +1029,3 @@ P
     </div>
   </div>
 </div>
-              <h4 class="modal-title" id="myModalLabel">St. George</h4>
