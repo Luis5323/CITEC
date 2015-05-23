@@ -729,119 +729,142 @@
       <div class="row">
         <?php 
         foreach ($participante as $key => $value) {
-        ?>
-        <!-- Ponente Memebr 1 -->
-        <div class="col-md-3 col-sm-6 col-xs-12" data-animation="fadeIn" data-animation-delay="03">
-          <div class="team-member modern">
-            <!-- Ponente Photo, Name & Position -->
-            <div class="member-photo">
-              <img alt="" src="images/ponentes/face_placehold.jpg" />
-              <div class="member-name"><?php echo $value->nombres; ?><span><?php echo $value->apellidos; ?></span>
+          ?>
+          <!-- Ponente Memebr 1 -->
+          <div class="col-md-3 col-sm-6 col-xs-12" data-animation="fadeIn" data-animation-delay="03">
+            <div class="team-member modern">
+              <!-- Ponente Photo, Name & Position -->
+              <div class="member-photo">
+                <img alt="" src="images/ponentes/face_placehold.jpg" />
+                <div class="member-name"><?php echo $value->nombres; ?><span><?php echo $value->apellidos; ?></span>
+                </div>
+              </div>
+              <!-- Ponente Words -->
+              <div class="member-info">
+                <p><h2>Email:</h2> <?php echo $value->email; ?></p>
+              </div>
+              <!-- Ponente Social Links -->
+              <div class="member-socail">
+                <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+                <a class="gplus" href="#"><i class="fa fa-google-plus"></i></a>
+                <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                <a class="flickr" href="#"><i class="fa fa-flickr"></i></a>
+                <a class="mail" href="#"><i class="fa fa-envelope"></i></a>
               </div>
             </div>
-            <!-- Ponente Words -->
-            <div class="member-info">
-              <p><h2>Email:</h2> <?php echo $value->email; ?></p>
+          </div>
+          <!-- End Ponente 1 -->
+          <?php } ?>
+        </div>
+        <!-- End Ponente Members -->
+
+      </div><!-- .container -->
+    </div>
+    <!-- End Team Member Section -->
+
+    <!-- Start Descargables Section -->
+    <div id="descargables">
+      <!-- <div class=" section pricing-section"> -->
+      <div class="container">
+        <div >
+          <div class="col-md-12">
+            <!-- Start Big Heading -->
+            <div class="big-title text-center">
+              <h1>Formatos <strong>Descargables</strong></h1>
             </div>
-            <!-- Ponente Social Links -->
-            <div class="member-socail">
-              <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
-              <a class="gplus" href="#"><i class="fa fa-google-plus"></i></a>
-              <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
-              <a class="flickr" href="#"><i class="fa fa-flickr"></i></a>
-              <a class="mail" href="#"><i class="fa fa-envelope"></i></a>
+            <!-- End Big Heading -->
+
+            <!-- Text -->
+            <p class="text-center">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+            <div>
+              <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                  <img src="images/doc.png" alt="...">
+                  <div class="caption">
+                    <h3>Formato</h3>
+                    <p>Conozca el formato para el artículo final.</p>
+                    <p><a href="formatos/programa_sitec.pdf" class="btn btn-success" role="button">Ver Documento</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                 <img src="images/doc.png" alt="...">
+                 <div class="caption">
+                  <h3>Preguntas</h3>
+                  <p>Conozca las preguntas frecuentes sobre el evento</p>
+                  <p><a href="preguntas/preguntas_sitec.pdf" class="btn btn-success" role="button">Ver Preguntas</a></p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <!-- End Ponente 1 -->
-       <?php } ?>
-      </div>
-      <!-- End Ponente Members -->
-
-    </div><!-- .container -->
-  </div>
-  <!-- End Team Member Section -->
-
-  <!-- Start Descargables Section -->
-<div id="descargables">
-<!-- <div class=" section pricing-section"> -->
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <!-- Start Big Heading -->
-        <div class="big-title text-center">
-          <h1><strong>Formatos</strong> Descargables</h1>
-        </div>
-        <!-- End Big Heading -->
-
-        <!-- Text -->
-        <p class="text-center">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-<div class="row">
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <img src="images/doc.png" alt="...">
-      <div class="caption">
-        <h3>Formato</h3>
-        <p>Conozca y descargue el formato para el artículo final.</p>
-        <p><a href="formatos/programa_sitec.pdf" class="btn btn-success" role="button">Ver Documento</a></p>
       </div>
     </div>
   </div>
-</div>
-    </div>
-
-</div>
-</div>
-</div>
 </div>
 </center>
 <!-- End Descargables Section -->
 
- <!-- Start Preguntas Section -->
+<!-- Start Preguntas Section -->
 <div id="preguntas">
-<!-- <div class=" section pricing-section"> -->
+  <!-- <div class=" section pricing-section"> -->
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <!-- Start Big Heading -->
-        <div class="big-title text-center">
-          <h1>Comentarios y <strong>Preguntas Frecuentes</strong></h1>
-        </div>
-        <!-- End Big Heading -->
-
-        <!-- Text -->
-        <p class="text-center">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-    <div class="row">
-      <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-       <img src="images/doc.png" alt="...">
-      <div class="caption">
-        <h3>Preguntas</h3>
-        <p>Conozca y descargue las preguntas frecuentes sobre el evento</p>
-        <p><a href="preguntas/preguntas_sitec.pdf" class="btn btn-success" role="button">Ver Preguntas</a></p>
+        <div>
+          <div>
+            <div class="caption">
+              <hr>
+              <h1 class="cntr">Comentarios y Sugerencias</h1>
+              <p>Nos interesa tu opini&oacute;n, dejanos un comentario y/o una sugerencia</p>              
+              <br>
+              <form id="comentario-form" name="comentario-form" action="comentar.php" method="post">
+                <div class="form-group">
+                  <label for="nombre">Nombre</label>
+                  <input type="text" class="form-control" id="nombre" placeholder="" name="nombre">
+                </div>
+                <div class="form-group">
+                  <label for="comentario">Comentario y/o Sugerencia</label>
+                  <textarea class="form-control" name="comentario"></textarea>
+                </div>
+                <button type="submit" class="btn btn-success" align="left">Publicar</button>
+                <button type="reset" class="btn btn-danger">Cancelar</button>
+              </form>
+            </div>
+            <p>¿Quieres conocer la opini&oacute;n de los dem&aacute;s?
+              <b><a href="#" data-toggle="modal" data-target="#modal_comments">Ver comentarios</a></b>
+            </p>
+            <br><br><br>
           </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-4">
-        <div class="thumbnail">
-      <img src="images/com.png" alt="...">
-      <div class="caption">
-        <h3>Comentarios y Sugerencias</h3>
-        <p>Si tiene algún comentario o sugerencia sobre el evento o el sitio web, escribanos, su opinión es muy importante</p>
-        <p><a href="comsug.php" class="btn btn-success" role="button">Comentar</a></p>
-          </div>
-        </div>
       </div>
     </div>
-    </div>
-
+  </div>
 </div>
 </div>
-</div>
-</div>
-</center>
 <!-- End Preguntas Section -->
 
+  <!--Modal Comentarios-->
+  <div class="modal fade" id="modal_comments" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Comentarios</h4>
+          <p>No te olvides de dejar tu comentario, tu opini&oacute;n es muy importante para nosotros</p>
+        </div>
+        <div class="modal-body">
+          <?php include ("com.html"); ?>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary btn-lg" data-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Start Footer Section -->
   <footer>
