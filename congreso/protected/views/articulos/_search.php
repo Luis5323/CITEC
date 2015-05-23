@@ -28,17 +28,17 @@
 
 	<div class="row">
 		<?php echo $form->label($model,'titulo'); ?>
-		<?php echo $form->textField($model,'titulo',array('size'=>60,'maxlength'=>500,'class'=>'form-control')); ?>
+		<?php echo $form->textField($model,'titulo',array('size'=>60,'maxlength'=>500, 'class'=>'form-control')); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->label($model,'resumen'); ?>
-		<?php echo $form->textArea($model,'resumen',array('rows'=>6, 'cols'=>50,'class'=>'form-control')); ?>
+		<?php echo $form->textArea($model,'resumen',array('rows'=>6, 'cols'=>50, 'class'=>'form-control')); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->label($model,'articulo_pdf'); ?>
-		<?php echo $form->textField($model,'articulo_pdf',array('size'=>60,'maxlength'=>250,'class'=>'form-control')); ?>
+		<?php echo $form->textField($model,'articulo_pdf',array('size'=>60,'maxlength'=>250, 'class'=>'form-control')); ?>
 	</div>
 
 	<div class="row">
@@ -48,7 +48,7 @@
 
 	<div class="row">
 		<?php echo $form->label($model,'resultado'); ?>
-		<?php echo $form->textArea($model,'resultado',array('rows'=>6, 'cols'=>50,'class'=>'form-control')); ?>
+		<?php echo $form->textArea($model,'resultado',array('rows'=>6, 'cols'=>50, 'class'=>'form-control')); ?>
 	</div>
 
 	<div class="row buttons">

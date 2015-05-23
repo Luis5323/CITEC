@@ -38,6 +38,18 @@
 	</div>
 
 	<div class="form-group">
+		<?php echo $form->labelEx($model,'contraseña'); ?>
+		<?php echo $form->textField($model,'contraseña',array('size'=>60,'maxlength'=>250,'class'=>'form-control')); ?>
+		<?php echo $form->error($model,'contraseña'); ?>
+	</div>
+
+	<div class="form-group">
+		<?php echo $form->labelEx($model,'veri_contraseña'); ?>
+		<?php echo $form->textField($model,'veri_contraseña',array('size'=>60,'maxlength'=>250,'class'=>'form-control')); ?>
+		<?php echo $form->error($model,'veri_contraseña'); ?>
+	</div>
+
+	<div class="form-group">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save', array('class'=>'btn btn-primary')); ?>
 	</div>
 

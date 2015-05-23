@@ -29,7 +29,7 @@ class ActividadesController extends Controller
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
 				'actions'=>array('index','view'),
-				'users'=>array('*'),
+				'users'=>array('@'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
 				'actions'=>array('create','update'),
@@ -37,7 +37,8 @@ class ActividadesController extends Controller
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
+				#'users'=>array('admin'),
+				'roles'=>array('admin'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -122,9 +123,13 @@ class ActividadesController extends Controller
 	 */
 	public function actionIndex()
 	{
+		#Yii::app()->authManager->createRole("congresista");
+		#Yii::app()->authManager->assign("congresista",2);
+
 		$dataProvider=new CActiveDataProvider('Actividades');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
+			
 		));
 	}
 
@@ -135,14 +140,16 @@ class ActividadesController extends Controller
 	{
 		//vista de crear
 		$model=new Actividades;
+		
+     
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
 		if(isset($_POST['Actividades']))
 		{
-			$model->attributes=$_POST['Actividades'];
-		$model->save();
+		 $model->attributes=$_POST['Actividades'];
+		 $model->save();
 		}
 
 		//vista de Admin
@@ -154,6 +161,7 @@ class ActividadesController extends Controller
 		$this->render('admin',array(
 			'modelGrid'=>$modelGrid,
 			'model'=>$model,
+			
 		));
 	}
 

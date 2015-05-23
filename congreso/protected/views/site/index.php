@@ -132,7 +132,7 @@
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="myModalLabel">Mapa del Evento</h4>
-        <h3><a href="https://goo.gl/maps/HBqvQ" target="mapa">Ir a ITC Campus II ahora!!</a></h3>
+        <h5><a href="https://goo.gl/maps/HBqvQ" target="mapa">Ir a ITC Campus II ahora!!!</a></h5>
       </div>
       <div class="modal-body">
         <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.138410769463!2d-100.81251999999999!3d20.541517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842cbabd3c2cd0ab%3A0x655a93bfa763b7ce!2sTecnologico+de+celaya+Campus+2!5e0!3m2!1ses!2s!4v1428204840987" width="100%" height="450" frameborder="0" style="border:0"></iframe>
@@ -221,66 +221,71 @@
 
     <!-- Some Text -->
     <p class="text-center">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-
       <!-- Divider -->
       <div class="hr1" style="margin-bottom:15px;"></div>
       <center>
       <!-- Start Recent Projects Carousel -->
       <!-- Start Recent Projects Carousel -->
+
       <ul id="portfolio-list" data-animated="fadeIn">
         <li>
-          <img src="images/Portfolio/comida.jpg" alt="" />
+          <img src="images/Portfolio/comida.jpg"/>
           <div class="portfolio-item-content">
-            <span class="header">Tracidicional comida de Sistemas</span>
-            <p class="body">web develpment, design</p>
+            <span class="header">Tradicional Comida</span>
+            <p class="body">Sistemas y Computacion</p>
           </div>
-          <a href="#"><i class="more">+</i></a>
-
+          <a href="#" >
+            <i class="more" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Some content">+</i>
+          </a>
         </li>
         <li>
-          <img src="images/Portfolio/2.png" alt="" />
+          <img src="images/Portfolio/musica.jpg" alt="" />
           <div class="portfolio-item-content">
             <span class="header">Quarterly Musashino</span>
             <p class="body">web develpment, design</p>
           </div>
-          <a href="#"><i class="more">+</i></a>
-
-        </li>
+          <a href="#" >
+            <i class="more" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Some content">+</i>
+          </a>        </li>
         <li>
-          <img src="images/Portfolio/3.png" alt="" />
+          <img src="images/Portfolio/tecnologia.jpg" alt="" />
           <div class="portfolio-item-content">
             <span class="header">Mainichi April 2014</span>
             <p class="body">web develpment, design</p>
           </div>
-          <a href="#"><i class="more">+</i></a>
-
+          <a href="#" >
+            <i class="more" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Some content">+</i>
+          </a>
         </li>
         <li>
-          <img src="images/Portfolio/4.png" alt="" />
+          <img src="images/Portfolio/google_glass.jpg" alt="" />
           <div class="portfolio-item-content">
             <span class="header">Shitamachi Rocket</span>
             <p class="body">web develpment, design</p>
           </div>
-          <a href="#"><i class="more">+</i></a>
-
+          <a href="#" >
+            <i class="more" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Some content">+</i>
+          </a>
         </li>
         <li>
-          <img src="images/Portfolio/5.png" alt="" />
+          <img src="images/Portfolio/wifi.jpg" alt="" />
           <div class="portfolio-item-content">
             <span class="header">Majesty express vol. 01</span>
             <p class="body">web develpment, design</p>
           </div>
-          <a href="#"><i class="more">+</i></a>
-
+          <a href="#" >
+            <i class="more" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Some content">+</i>
+          </a>
         </li>
         <li>
-          <img src="images/Portfolio/6.png" alt="" />
+          <img src="images/Portfolio/fingerprint.jpg" alt="" />
           <div class="portfolio-item-content">
             <span class="header">Monocle issue 69</span>
             <p class="body">web develpment, design</p>
           </div>
-          <a href="#"><i class="more">+</i></a>
-
+          <a href="#" >
+            <i class="more" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Some content">+</i>
+          </a>
         </li>
       </ul>
       <!-- End Recent Projects Carousel -->
@@ -502,7 +507,7 @@
             <h3><strong>Hotel St. George Celaya</strong></h3>
           </div>
           <div class="plan-price">
-            <div class="price-value">$36<span>.00</span></div>
+            <div class="price-value">$675<span>.00</span></div>
             <div class="interval">por noche</div>
           </div>
           <div class="plan-list">
@@ -524,9 +529,10 @@
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
               <h4 class="modal-title" id="myModalLabel">St. George</h4>
+              <h5><a href="https://goo.gl/maps/QU5Y7" target="mapa">Ver Mapa Completo</a></h5>
             </div>
             <div class="modal-body">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14946.781045944948!2d-100.83667699999998!3d20.518715000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842cbaf9a08e7b09%3A0xe520504adaeae9b3!2sHotel+St.+George!5e0!3m2!1ses!2s!4v1428199089643" width="600" height="450" frameborder="0" style="border:0"></iframe>            </div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14946.781045944948!2d-100.83667699999998!3d20.518715000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842cbaf9a08e7b09%3A0xe520504adaeae9b3!2sHotel+St.+George!5e0!3m2!1ses!2s!4v1428199089643" width="100%" height="450" frameborder="0" style="border:0"></iframe>            </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-primary btn-lg" data-dismiss="modal">Cerrar</button>
             </div>
@@ -540,7 +546,7 @@
             <h3><strong>Hotel Mary Celaya</strong></h3>
           </div>
           <div class="plan-price">
-            <div class="price-value">$50<span>.00</span></div>
+            <div class="price-value">$873<span>.00</span></div>
             <div class="interval">por noche</div>
           </div>
           <div class="plan-list">
@@ -562,9 +568,10 @@
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
               <h4 class="modal-title" id="myModalLabel">Mary</h4>
+              <h5><a href="https://goo.gl/maps/1FEsu" target="mapa">Ver Mapa Completo</a></h5>
             </div>
             <div class="modal-body">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14946.69874001782!2d-100.81473600000005!3d20.519558000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842cba88e2e052d9%3A0xe78d6a428a89890b!2sHotel+Mary!5e0!3m2!1ses!2s!4v1428199347364" width="600" height="450" frameborder="0" style="border:0"></iframe>            
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14946.69874001782!2d-100.81473600000005!3d20.519558000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842cba88e2e052d9%3A0xe78d6a428a89890b!2sHotel+Mary!5e0!3m2!1ses!2s!4v1428199347364" width="100%" height="450" frameborder="0" style="border:0"></iframe>            
               <div class="modal-footer">
                 <button type="button" class="btn btn-primary btn-lg" data-dismiss="modal">Cerrar</button>
               </div>
@@ -579,7 +586,7 @@
             <h3><strong>Hotel Wyndham Garden Celaya</strong></h3>
           </div>
           <div class="plan-price">
-            <div class="price-value">$67<span>.00</span></div>
+            <div class="price-value">$1,179<span>.00</span></div>
             <div class="interval">por noche</div>
           </div>
           <div class="plan-list">
@@ -601,9 +608,10 @@
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
               <h4 class="modal-title" id="myModalLabel">Wyndham Garden Celaya</h4>
+              <h5><a href="https://goo.gl/maps/yAf8A" target="mapa">Ver Mapa Completo</a></h5>
             </div>
             <div class="modal-body">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14943.41480237818!2d-100.82447400000001!3d20.553166000000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842cbadff2a0206d%3A0xdf41336fa214d3fe!2sHotel+Wyndham+Garden+Celaya!5e0!3m2!1ses!2s!4v1428198536801" width="600" height="450" frameborder="0" style="border:0"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14943.41480237818!2d-100.82447400000001!3d20.553166000000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842cbadff2a0206d%3A0xdf41336fa214d3fe!2sHotel+Wyndham+Garden+Celaya!5e0!3m2!1ses!2s!4v1428198536801" width="100%" height="450" frameborder="0" style="border:0"></iframe>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-primary btn-lg" data-dismiss="modal">Cerrar</button>
@@ -616,16 +624,16 @@
       <div class="col-md-3 col-sm-3 col-xs-12">
         <div class="pricing-table">
           <div class="plan-name">
-            <h3><strong>Hotel Casa Inn Celaya</strong></h3>
+            <h3><strong>Hotel City Express Celaya</strong></h3>
           </div>
           <div class="plan-price">
-            <div class="price-value">$82<span>.00</span></div>
+            <div class="price-value">$1,041<span>.00</span></div>
             <div class="interval">por noche</div>
           </div>
           <div class="plan-list">
             <ul>
-              <li><strong>Telefono: <br></strong> +52 461 598 6700</li>
-              <li><a href="#"><strong>-</strong></a></li>
+              <li><strong>Telefono: <br></strong> +52 461 618 5900</li>
+              <li><a target="_blank" href="https://cityexpress.com/es/hoteles-Mexico/MX/Guanajuato-10/Celaya-19/City-Express-Celaya-23"><strong>cityexpress.com</strong></a></li>
             </ul>
           </div>
           <div class="plan-signup">
@@ -640,10 +648,13 @@
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel">Mary</h4>
+              <h4 class="modal-title" id="myModalLabel">City Express</h4>
+              <h5><a href="https://goo.gl/maps/arHvA" target="mapa">Ver Mapa Completo</a></h5>
             </div>
             <div class="modal-body">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14945.383652204015!2d-100.77823200000002!3d20.533023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842cb069cd47ec6f%3A0x83d5a0f0d9847699!2sHotel+Casa+Inn!5e0!3m2!1ses!2s!4v1428199649856" width="600" height="450" frameborder="0" style="border:0"></iframe>              <button type="button" class="btn btn-primary btn-lg" data-dismiss="modal">Cerrar</button>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14943.779623215438!2d-100.83951200000003!3d20.549435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x619d23d16d37c42f!2sHotel+City+Express+Celaya+Oficial!5e0!3m2!1ses!2smx!4v1432019040113" width="100%" height="450" frameborder="0" style="border:0"></iframe>            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary btn-lg" data-dismiss="modal">Cerrar</button>
             </div>
           </div>
         </div>
@@ -690,8 +701,7 @@
               <h4 class="modal-title" id="myModalLabel">M&aacute;s Hoteles</h4>
             </div>
             <div class="modal-body">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14944.553643077852!2d-100.81252!3d20.541517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shoteles!5e0!3m2!1ses!2s!4v1428200017255" width="600" height="450" frameborder="0" style="border:0"></iframe>            </div>
-          </div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14944.553643077852!2d-100.81252000000003!3d20.541517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shoteles!5e0!3m2!1ses!2smx!4v1432019790163" width="100%" height="450" frameborder="0" style="border:0"></iframe>          </div>
         </div>
       </div>
 </div>
@@ -754,7 +764,7 @@
 
   <!-- Start Descargables Section -->
 <div id="descargables">
-<div class=" section pricing-section">
+<!-- <div class=" section pricing-section"> -->
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -786,6 +796,51 @@
 </div>
 </center>
 <!-- End Descargables Section -->
+
+ <!-- Start Preguntas Section -->
+<div id="preguntas">
+<!-- <div class=" section pricing-section"> -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <!-- Start Big Heading -->
+        <div class="big-title text-center">
+          <h1>Comentarios y <strong>Preguntas Frecuentes</strong></h1>
+        </div>
+        <!-- End Big Heading -->
+
+        <!-- Text -->
+        <p class="text-center">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+    <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+       <img src="images/doc.png" alt="...">
+      <div class="caption">
+        <h3>Preguntas</h3>
+        <p>Conozca y descargue las preguntas frecuentes sobre el evento</p>
+        <p><a href="preguntas/preguntas_sitec.pdf" class="btn btn-success" role="button">Ver Preguntas</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+      <img src="images/com.png" alt="...">
+      <div class="caption">
+        <h3>Comentarios y Sugerencias</h3>
+        <p>Si tiene algún comentario o sugerencia sobre el evento o el sitio web, escribanos, su opinión es muy importante</p>
+        <p><a href="comsug.php" class="btn btn-success" role="button">Comentar</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+</div>
+</div>
+</div>
+</div>
+</center>
+<!-- End Preguntas Section -->
 
 
   <!-- Start Footer Section -->
@@ -863,7 +918,6 @@
 
 <!-- Go To Top Link -->
 <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
-
 <div id="loader">
   <div class="spinner">
     <div class="dot1"></div>
@@ -956,8 +1010,8 @@
                     <?php echo $form->textField($model,'nombres',
                     array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Nombre(s)')); ?>
                     <?php echo $form->error($model,'nombres',array('class'=>'alert alert-danger')); ?>
-                  </div
->                </div>
+                  </div> 
+                </div>
 
                 <!--apellidos-->
                 <div class="form-group">

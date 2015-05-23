@@ -21,9 +21,9 @@ $this->menu=array(
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
-		'id_actividad',
-		'id_tipo',
-		'id_evento',
+		//'id_actividad',
+		//'id_tipo',
+		//'id_evento',
 		'nombre',
 		'fecha_inicio',
 		'fecha_fin',

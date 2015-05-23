@@ -32,17 +32,28 @@ $('.search-form form').submit(function(){
 	'dataProvider'=>$modelGrid->search(),
 	'filter'=>$modelGrid,
 	'columns'=>array(
-		'id_actividad',
-		'id_tipo',
-		'id_evento',
+		//'id_actividad',
+		//'id_tipo',
+		//'id_evento',
 		'nombre',
 		'fecha_inicio',
 		'fecha_fin',
 		/*
 		'lugar',
 		*/
-		array(
+			array(
 			'class'=>'CButtonColumn',
+			'template'=>'{view}',
+			'header'=>'Inscribirse',
+			'buttons'=>array(
+							'view'=>array(
+										  'url'=>'Yii::app()->createUrl("participantesActividades/admin",
+										  	array(
+										  		"id_actividad"=>$data->id_actividad,
+										  		"id_user"=>Yii::app()->user->id,
+										  		))'
+										 )
+			),
 		),
 	),
 )); ?>
