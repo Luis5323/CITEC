@@ -20,6 +20,12 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="form-group">
+		<?php echo $form->labelEx($model,'nombre'); ?>
+		<?php echo $form->textField($model,'nombre',array('size'=>60,'maxlength'=>500, 'class'=>'form-control')); ?>
+		<?php echo $form->error($model,'nombre'); ?>
+	</div>
+
+	<div class="form-group">
 		<?php echo $form->labelEx($model,'comentario'); ?>
 		<?php echo $form->textField($model,'comentario',array('size'=>60,'maxlength'=>500, 'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'comentario'); ?>

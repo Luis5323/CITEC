@@ -133,13 +133,14 @@ class ComentariosController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		//vista de Crear
+		//vista Crear
 		$model=new Comentarios;
 
 		if(isset($_POST['Comentarios']))
 		{
 			$model->attributes=$_POST['Comentarios'];
 			$model->save();
+
 		}
 
 		//vista de Admin

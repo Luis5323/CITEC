@@ -6442,3 +6442,52 @@ Stack trace:
 REQUEST_URI=/CITEC/congreso/index.php?r=comsug.php
 HTTP_REFERER=http://localhost/CITEC/congreso/index.php?r=/site/index
 ---
+2015/05/23 11:01:54 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Usted no se encuentra autorizado a realizar esta acción.' in C:\xampp\htdocs\CITEC\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\CITEC\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'Usted no se enc...')
+#1 C:\xampp\htdocs\CITEC\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\CITEC\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\CITEC\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\CITEC\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\CITEC\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\CITEC\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\CITEC\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\CITEC\framework\web\CWebApplication.php(141): CWebApplication->runController('comentarios/adm...')
+#9 C:\xampp\htdocs\CITEC\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\CITEC\congreso\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/CITEC/congreso/?r=comentarios/admin
+HTTP_REFERER=http://localhost/CITEC/congreso/?r=eventos/admin
+---
+2015/05/23 11:05:18 [error] [php] Undefined variable: id (C:\xampp\htdocs\CITEC\congreso\protected\controllers\ComentariosController.php:137)
+Stack trace:
+#0 C:\xampp\htdocs\CITEC\framework\web\filters\CFilterChain.php(133): ComentariosController->runAction()
+#1 C:\xampp\htdocs\CITEC\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\CITEC\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\CITEC\framework\web\filters\CInlineFilter.php(58): ComentariosController->filterAccessControl()
+#4 C:\xampp\htdocs\CITEC\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\CITEC\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\CITEC\framework\web\CController.php(265): ComentariosController->runActionWithFilters()
+#7 C:\xampp\htdocs\CITEC\framework\web\CWebApplication.php(282): ComentariosController->run()
+#8 C:\xampp\htdocs\CITEC\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\CITEC\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\CITEC\congreso\index.php(13): CWebApplication->run()
+REQUEST_URI=/CITEC/congreso/?r=comentarios/admin
+in C:\xampp\htdocs\CITEC\congreso\protected\controllers\ComentariosController.php (137)
+in C:\xampp\htdocs\CITEC\congreso\index.php (13)
+2015/05/23 11:06:43 [error] [php] Undefined variable: model (C:\xampp\htdocs\CITEC\congreso\protected\controllers\ComentariosController.php:151)
+Stack trace:
+#0 C:\xampp\htdocs\CITEC\framework\web\filters\CFilterChain.php(133): ComentariosController->runAction()
+#1 C:\xampp\htdocs\CITEC\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\CITEC\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\CITEC\framework\web\filters\CInlineFilter.php(58): ComentariosController->filterAccessControl()
+#4 C:\xampp\htdocs\CITEC\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\CITEC\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\CITEC\framework\web\CController.php(265): ComentariosController->runActionWithFilters()
+#7 C:\xampp\htdocs\CITEC\framework\web\CWebApplication.php(282): ComentariosController->run()
+#8 C:\xampp\htdocs\CITEC\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\CITEC\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\CITEC\congreso\index.php(13): CWebApplication->run()
+REQUEST_URI=/CITEC/congreso/?r=comentarios/admin
+in C:\xampp\htdocs\CITEC\congreso\protected\controllers\ComentariosController.php (151)
+in C:\xampp\htdocs\CITEC\congreso\index.php (13)

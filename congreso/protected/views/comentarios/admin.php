@@ -27,6 +27,7 @@ $('.search-form form').submit(function(){
 ?>
 
 <h1>Administrar Comentarios</h1>
+
 <div class="col-md-6">
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'comentarios-grid',
@@ -34,6 +35,7 @@ $('.search-form form').submit(function(){
 	'filter'=>$modelGrid,
 	'columns'=>array(
 		'id_comentario',
+		'nombre',
 		'comentario',
 		array(
 			'class'=>'CButtonColumn',
@@ -55,3 +57,4 @@ $('.search-form form').submit(function(){
 </div>
 
 </div>
+

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 16-05-2015 a las 06:47:16
+-- Tiempo de generación: 23-05-2015 a las 11:09:07
 -- Versión del servidor: 5.6.20
 -- Versión de PHP: 5.5.15
 
@@ -133,6 +133,26 @@ CREATE TABLE IF NOT EXISTS `authitemchild` (
   `parent` varchar(64) NOT NULL,
   `child` varchar(64) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `comentarios`
+--
+
+CREATE TABLE IF NOT EXISTS `comentarios` (
+`id_comentario` int(11) NOT NULL,
+  `nombre` varchar(500) NOT NULL,
+  `comentario` varchar(500) NOT NULL
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Volcado de datos para la tabla `comentarios`
+--
+
+INSERT INTO `comentarios` (`id_comentario`, `nombre`, `comentario`) VALUES
+(1, '', 'comentatio1'),
+(2, 'nombre2', 'comentario2');
 
 -- --------------------------------------------------------
 
@@ -362,6 +382,12 @@ ALTER TABLE `authitemchild`
  ADD PRIMARY KEY (`parent`,`child`), ADD KEY `child` (`child`);
 
 --
+-- Indices de la tabla `comentarios`
+--
+ALTER TABLE `comentarios`
+ ADD PRIMARY KEY (`id_comentario`);
+
+--
 -- Indices de la tabla `eventos`
 --
 ALTER TABLE `eventos`
@@ -423,6 +449,11 @@ MODIFY `id_actividad` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
 --
 ALTER TABLE `articulos`
 MODIFY `id_articulo` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
+--
+-- AUTO_INCREMENT de la tabla `comentarios`
+--
+ALTER TABLE `comentarios`
+MODIFY `id_comentario` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT de la tabla `eventos`
 --
