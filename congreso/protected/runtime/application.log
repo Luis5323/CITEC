@@ -6531,3 +6531,195 @@ Stack trace:
 REQUEST_URI=/TAPW/yii/CITEC/congreso/index.php
 HTTP_REFERER=http://localhost/TAPW/yii/CITEC/congreso/index.php?r=/site/index
 ---
+2015/05/24 08:38:19 [error] [system.db.CDbCommand] CDbCommand::fetchAll() falló: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'citec.comentarios' doesn't exist. La sentencia SQL ejecutada fue: SHOW FULL COLUMNS FROM `comentarios`.
+in C:\xampp\htdocs\topicosweb\CITEC\congreso\protected\controllers\ComentariosController.php (137)
+in C:\xampp\htdocs\topicosweb\CITEC\congreso\index.php (13)
+2015/05/24 08:38:19 [error] [exception.CDbException] exception 'CDbException' with message 'La tabla "comentarios" definida en la clase active record "Comentarios" no se ha podido encontrar en la base de datos.' in C:\xampp\htdocs\topicosweb\CITEC\framework\db\ar\CActiveRecord.php:2385
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\CITEC\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Comentarios))
+#1 C:\xampp\htdocs\topicosweb\CITEC\framework\db\ar\CActiveRecord.php(79): CActiveRecord->getMetaData()
+#2 C:\xampp\htdocs\topicosweb\CITEC\congreso\protected\controllers\ComentariosController.php(137): CActiveRecord->__construct()
+#3 C:\xampp\htdocs\topicosweb\CITEC\framework\web\actions\CInlineAction.php(49): ComentariosController->actionAdmin()
+#4 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\topicosweb\CITEC\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\topicosweb\CITEC\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\topicosweb\CITEC\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\topicosweb\CITEC\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CWebApplication.php(282): CController->run('admin')
+#13 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CWebApplication.php(141): CWebApplication->runController('comentarios/adm...')
+#14 C:\xampp\htdocs\topicosweb\CITEC\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\topicosweb\CITEC\congreso\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/topicosweb/CITEC/congreso/index.php?r=comentarios/admin
+HTTP_REFERER=http://localhost:8080/topicosweb/CITEC/congreso/index.php?r=eventos/admin
+---
+2015/05/24 08:43:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'El sistema no ha podido encontrar la acción "recuperarpassword" solicitada.' in C:\xampp\htdocs\topicosweb\CITEC\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CController.php(270): CController->missingAction('recuperarpasswo...')
+#1 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CWebApplication.php(282): CController->run('recuperarpasswo...')
+#2 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CWebApplication.php(141): CWebApplication->runController('site/recuperarp...')
+#3 C:\xampp\htdocs\topicosweb\CITEC\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\topicosweb\CITEC\congreso\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/topicosweb/CITEC/congreso/index.php?r=site/recuperarpassword
+HTTP_REFERER=http://localhost:8080/topicosweb/CITEC/congreso/index.php?r=site/login
+---
+2015/05/24 09:00:13 [error] [php] Undefined variable: model (C:\xampp\htdocs\topicosweb\CITEC\congreso\protected\views\site\recuperarpassword.php:14)
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\xampp\htdocs\topicosweb\CITEC\congreso\protected\controllers\SiteController.php(188): SiteController->render()
+#3 C:\xampp\htdocs\topicosweb\CITEC\framework\web\actions\CInlineAction.php(49): SiteController->actionRecuperarpassword()
+#4 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\topicosweb\CITEC\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\topicosweb\CITEC\congreso\index.php(13): CWebApplication->run()
+REQUEST_URI=/topicosweb/CITEC/congreso/index.php?r=site/recuperarpassword
+in C:\xampp\htdocs\topicosweb\CITEC\congreso\protected\views\site\recuperarpassword.php (14)
+in C:\xampp\htdocs\topicosweb\CITEC\congreso\protected\controllers\SiteController.php (188)
+in C:\xampp\htdocs\topicosweb\CITEC\congreso\index.php (13)
+2015/05/24 09:15:52 [error] [php] Object of class RecuperarPassword could not be converted to string (C:\xampp\htdocs\topicosweb\CITEC\congreso\protected\views\site\recuperarpassword.php:35)
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\xampp\htdocs\topicosweb\CITEC\congreso\protected\controllers\SiteController.php(189): SiteController->render()
+#3 C:\xampp\htdocs\topicosweb\CITEC\framework\web\actions\CInlineAction.php(49): SiteController->actionRecuperarpassword()
+#4 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\topicosweb\CITEC\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\topicosweb\CITEC\congreso\index.php(13): CWebApplication->run()
+REQUEST_URI=/topicosweb/CITEC/congreso/index.php?r=site/recuperarpassword
+in C:\xampp\htdocs\topicosweb\CITEC\congreso\protected\views\site\recuperarpassword.php (35)
+in C:\xampp\htdocs\topicosweb\CITEC\congreso\protected\controllers\SiteController.php (189)
+in C:\xampp\htdocs\topicosweb\CITEC\congreso\index.php (13)
+2015/05/24 09:19:52 [error] [php] Object of class RecuperarPassword could not be converted to string (C:\xampp\htdocs\topicosweb\CITEC\congreso\protected\views\site\recuperarpassword.php:35)
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\xampp\htdocs\topicosweb\CITEC\congreso\protected\controllers\SiteController.php(189): SiteController->render()
+#3 C:\xampp\htdocs\topicosweb\CITEC\framework\web\actions\CInlineAction.php(49): SiteController->actionRecuperarpassword()
+#4 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\topicosweb\CITEC\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\topicosweb\CITEC\congreso\index.php(13): CWebApplication->run()
+REQUEST_URI=/topicosweb/CITEC/congreso/index.php?r=site/recuperarpassword
+in C:\xampp\htdocs\topicosweb\CITEC\congreso\protected\views\site\recuperarpassword.php (35)
+in C:\xampp\htdocs\topicosweb\CITEC\congreso\protected\controllers\SiteController.php (189)
+in C:\xampp\htdocs\topicosweb\CITEC\congreso\index.php (13)
+2015/05/24 09:19:53 [error] [php] Object of class RecuperarPassword could not be converted to string (C:\xampp\htdocs\topicosweb\CITEC\congreso\protected\views\site\recuperarpassword.php:35)
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\xampp\htdocs\topicosweb\CITEC\congreso\protected\controllers\SiteController.php(189): SiteController->render()
+#3 C:\xampp\htdocs\topicosweb\CITEC\framework\web\actions\CInlineAction.php(49): SiteController->actionRecuperarpassword()
+#4 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\topicosweb\CITEC\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\topicosweb\CITEC\congreso\index.php(13): CWebApplication->run()
+REQUEST_URI=/topicosweb/CITEC/congreso/index.php?r=site/recuperarpassword
+in C:\xampp\htdocs\topicosweb\CITEC\congreso\protected\views\site\recuperarpassword.php (35)
+in C:\xampp\htdocs\topicosweb\CITEC\congreso\protected\controllers\SiteController.php (189)
+in C:\xampp\htdocs\topicosweb\CITEC\congreso\index.php (13)
+2015/05/24 09:20:09 [error] [php] Object of class RecuperarPassword could not be converted to string (C:\xampp\htdocs\topicosweb\CITEC\congreso\protected\views\site\recuperarpassword.php:35)
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\xampp\htdocs\topicosweb\CITEC\congreso\protected\controllers\SiteController.php(189): SiteController->render()
+#3 C:\xampp\htdocs\topicosweb\CITEC\framework\web\actions\CInlineAction.php(49): SiteController->actionRecuperarPassword()
+#4 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\topicosweb\CITEC\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\topicosweb\CITEC\congreso\index.php(13): CWebApplication->run()
+REQUEST_URI=/topicosweb/CITEC/congreso/index.php?r=site/recuperarpassword
+in C:\xampp\htdocs\topicosweb\CITEC\congreso\protected\views\site\recuperarpassword.php (35)
+in C:\xampp\htdocs\topicosweb\CITEC\congreso\protected\controllers\SiteController.php (189)
+in C:\xampp\htdocs\topicosweb\CITEC\congreso\index.php (13)
+2015/05/24 09:21:11 [error] [php] Object of class RecuperarPassword could not be converted to string (C:\xampp\htdocs\topicosweb\CITEC\congreso\protected\views\site\recuperarpassword.php:35)
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\xampp\htdocs\topicosweb\CITEC\congreso\protected\controllers\SiteController.php(189): SiteController->render()
+#3 C:\xampp\htdocs\topicosweb\CITEC\framework\web\actions\CInlineAction.php(49): SiteController->actionRecuperarPassword()
+#4 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\topicosweb\CITEC\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\topicosweb\CITEC\congreso\index.php(13): CWebApplication->run()
+REQUEST_URI=/topicosweb/CITEC/congreso/index.php?r=site/recuperarpassword
+in C:\xampp\htdocs\topicosweb\CITEC\congreso\protected\views\site\recuperarpassword.php (35)
+in C:\xampp\htdocs\topicosweb\CITEC\congreso\protected\controllers\SiteController.php (189)
+in C:\xampp\htdocs\topicosweb\CITEC\congreso\index.php (13)
+2015/05/24 19:11:03 [error] [system.db.CDbCommand] CDbCommand::() falló: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '='killer_zero19@live.com.mx'' at line 1. La sentencia SQL ejecutada fue: select email from participantes whereemail='killer_zero19@live.com.mx'.
+in C:\xampp\htdocs\topicosweb\CITEC\congreso\protected\controllers\SiteController.php (204)
+in C:\xampp\htdocs\topicosweb\CITEC\congreso\index.php (13)
+2015/05/24 19:11:03 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '='killer_zero19@live.com.mx'' at line 1. The SQL statement executed was: select email from participantes whereemail='killer_zero19@live.com.mx'' in C:\xampp\htdocs\topicosweb\CITEC\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\CITEC\framework\db\CDbCommand.php(377): CDbCommand->queryInternal('', 0, Array)
+#1 C:\xampp\htdocs\topicosweb\CITEC\congreso\protected\controllers\SiteController.php(204): CDbCommand->query()
+#2 C:\xampp\htdocs\topicosweb\CITEC\framework\web\actions\CInlineAction.php(49): SiteController->actionRecuperarpassword()
+#3 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CWebApplication.php(282): CController->run('recuperarpasswo...')
+#7 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CWebApplication.php(141): CWebApplication->runController('site/recuperarp...')
+#8 C:\xampp\htdocs\topicosweb\CITEC\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\topicosweb\CITEC\congreso\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/topicosweb/CITEC/congreso/index.php?r=site/recuperarpassword
+HTTP_REFERER=http://localhost:8080/topicosweb/CITEC/congreso/index.php?r=site/recuperarpassword
+---
+2015/05/24 19:11:55 [error] [system.db.CDbCommand] CDbCommand::() falló: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '='killer_zero19@live.com.mx'' at line 1. La sentencia SQL ejecutada fue: select email from participantes whereemail='killer_zero19@live.com.mx'.
+in C:\xampp\htdocs\topicosweb\CITEC\congreso\protected\controllers\SiteController.php (204)
+in C:\xampp\htdocs\topicosweb\CITEC\congreso\index.php (13)
+2015/05/24 19:11:55 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falló al ejecutar la sentencia SQL: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '='killer_zero19@live.com.mx'' at line 1. The SQL statement executed was: select email from participantes whereemail='killer_zero19@live.com.mx'' in C:\xampp\htdocs\topicosweb\CITEC\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\CITEC\framework\db\CDbCommand.php(377): CDbCommand->queryInternal('', 0, Array)
+#1 C:\xampp\htdocs\topicosweb\CITEC\congreso\protected\controllers\SiteController.php(204): CDbCommand->query()
+#2 C:\xampp\htdocs\topicosweb\CITEC\framework\web\actions\CInlineAction.php(49): SiteController->actionRecuperarpassword()
+#3 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CWebApplication.php(282): CController->run('recuperarpasswo...')
+#7 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CWebApplication.php(141): CWebApplication->runController('site/recuperarp...')
+#8 C:\xampp\htdocs\topicosweb\CITEC\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\topicosweb\CITEC\congreso\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/topicosweb/CITEC/congreso/index.php?r=site/recuperarpassword
+HTTP_REFERER=http://localhost:8080/topicosweb/CITEC/congreso/index.php?r=site/recuperarpassword
+---
+2015/05/24 19:13:48 [error] [php] include(C:\xampp\htdocs\topicosweb\CITEC\congreso\protected\extensions\phpmailer\JPhpMailer.php): failed to open stream: No such file or directory (C:\xampp\htdocs\topicosweb\CITEC\framework\YiiBase.php:404)
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\CITEC\congreso\protected\models\EnviarEmail.php(7): spl_autoload_call()
+#1 C:\xampp\htdocs\topicosweb\CITEC\congreso\protected\controllers\SiteController.php(232): EnviarEmail->Enviar_Email()
+#2 C:\xampp\htdocs\topicosweb\CITEC\framework\web\actions\CInlineAction.php(49): SiteController->actionRecuperarpassword()
+#3 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CController.php(286): SiteController->runAction()
+#5 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#6 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CWebApplication.php(282): SiteController->run()
+#7 C:\xampp\htdocs\topicosweb\CITEC\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\topicosweb\CITEC\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\topicosweb\CITEC\congreso\index.php(13): CWebApplication->run()
+REQUEST_URI=/topicosweb/CITEC/congreso/index.php?r=site/recuperarpassword
+in C:\xampp\htdocs\topicosweb\CITEC\congreso\protected\models\EnviarEmail.php (7)
+in C:\xampp\htdocs\topicosweb\CITEC\congreso\protected\controllers\SiteController.php (232)
+in C:\xampp\htdocs\topicosweb\CITEC\congreso\index.php (13)

@@ -51,3 +51,5 @@ $this->breadcrumbs=array(
 
 <?php $this->endWidget(); ?>
 </div><!-- form -->
+
+<a href="<?php echo Yii::app()->createUrl('site/recuperarpassword');?>">recuperar contraseña</a>

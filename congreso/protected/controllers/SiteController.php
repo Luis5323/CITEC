@@ -181,4 +181,65 @@ class SiteController extends Controller
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
 	}
+
+
+	public function actionRecuperarpassword()
+	{
+		$model=new RecuperarPassword;
+		$msg =' ';
+		if(isset($_POST["RecuperarPassword"]))
+		{
+			$model->attributes = $_POST['RecuperarPassword'];
+			if(!$model->validate())
+			{
+				$msg ="<strong class='text-error'>Error al enviar el formulario</strong>";
+			}
+			else
+			{
+				$conexion = Yii::app()->db;
+				$consulta = "select email from participantes where email='".$model->username."'";
+				
+
+				$resultado = $conexion->createCommand ($consulta);
+				$filas=$resultado->query();
+				$existe = false;
+				foreach ($filas as $fila) {
+					$existe = true;
+				}
+
+				if($existe===true)
+				{
+					$consulta = "select contraseña from participantes where email='".$model->username."'";
+					$resultado = $conexion->createCommand($consulta)->query();
+					$resultado->bindColumn(1, $password);
+
+					while($resultado->read()!==false)
+					{
+						$password=$password;
+					}
+
+					$email = new EnviarEmail;
+					$subject = "Recuperar Contraseña ";
+					$subject .= Yii::app()->name;
+					$message = "Bienvenido: ".$model->username."su contaseña es: ";
+					$message .=$password;
+
+					$email->Enviar_Email(
+						array(Yii::app()->params['adminEmail'],Yii::app()->name),
+						array($model->username,$model->username),
+						$subject,
+						$message
+						);
+
+				}
+				else
+				{
+					$msg = "<strong class='text-error'>Error usuario no existe</strong>";
+				}
+			}
+		}
+		$this->render('recuperarpassword', array('model'=>$model, 'msg'=>$msg));
+	}
+
+
 }
